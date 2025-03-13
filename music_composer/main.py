@@ -45,7 +45,7 @@ class MusicComposer:
 		"synth_pad": 89
 	}
 
-	def __init__(self, model_name="gemini-2.0-flash", system_instruction=None, piano_type="acoustic_grand", duration=480):
+	def __init__(self, model_name="gemini-2.0-flash", system_instruction=None, piano_type="acoustic_grand", duration=480, soundfont_path=None):
 		self.__model_name = model_name
 		self.__system_instruction = system_instruction
 		if not self.__system_instruction:
@@ -58,8 +58,11 @@ class MusicComposer:
 			system_instruction=self.__system_instruction,
 			delete_files=True
 		)
-		# self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/GeneralUser-GS.sf2'
-		self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/FluidR3_GM.sf2'
+		if soundfont_path:
+			self.__soundfont_path = soundfont_path
+		else:
+			self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/GeneralUser-GS.sf2'
+			# self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/FluidR3_GM.sf2'
 		self.__output_midi = f'{os.path.dirname(os.path.abspath(__file__))}/output.mid'
 		self.__output_wav = os.getenv("OUTPUT_WAV")
 		self.__piano_type = piano_type

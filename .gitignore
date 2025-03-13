@@ -170,4 +170,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 output.wav
-music_composer/output.mid
+music_composer/output.midmusic_composer/FluidR3_GM.sf2
