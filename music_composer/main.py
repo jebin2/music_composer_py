@@ -58,7 +58,8 @@ class MusicComposer:
 			system_instruction=self.__system_instruction,
 			delete_files=True
 		)
-		self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/GeneralUser-GS.sf2'
+		# self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/GeneralUser-GS.sf2'
+		self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/FluidR3_GM.sf2'
 		self.__output_midi = f'{os.path.dirname(os.path.abspath(__file__))}/output.mid'
 		self.__output_wav = os.getenv("OUTPUT_WAV")
 		self.__piano_type = piano_type
