@@ -1,0 +1,3 @@
+git
+fluidsynth
+libfluidsynth-dev
