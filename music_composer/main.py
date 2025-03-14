@@ -139,8 +139,10 @@ class MusicComposer:
 			command = f"fluidsynth -ni {self.__soundfont_path} {self.__output_midi} -F {self.__output_wav} -r 44100"
 			subprocess.run(command, shell=True, check=True, stdout=subprocess.DEVNULL)
 			logger_config.info(f"WAV file created: {self.__output_wav}")
-		except subprocess.CalledProcessError as e:
+			return self.__output_wav
+		except Exception as e:
 			logger_config.error(f"Error: Failed to convert MIDI to WAV: {e}", play_sound=False)
+			return None
 
 	def __schema(self):
 		return genai.types.Schema(
@@ -189,4 +191,4 @@ class MusicComposer:
 	def generate_music(self, user_prompt):
 		music_meta = self.__geminiWrapper.send_message(user_prompt=user_prompt, schema=self.__schema())[0]
 		self.__create_midi_file(json.loads(music_meta))
-		self.__convert_midi_to_wav()
+		return self.__convert_midi_to_wav()
