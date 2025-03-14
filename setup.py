@@ -3,6 +3,9 @@ from setuptools import setup, find_packages
 setup(
 	name="music_composer",
 	packages=find_packages(exclude=["tests*"]),
+	package_data={
+        "music_composer": ["system_prompt.txt", "GeneralUser-GS.sf2"]
+    },
 	install_requires=[
 		"music21",
 		"mido",
