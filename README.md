@@ -6,6 +6,9 @@ Create music with AI by simply describing what you want. This project uses Googl
 
 Music Composer is a Python application that translates natural language descriptions into musical compositions. By leveraging Google's Gemini API, it analyzes the emotional content, narrative structure, and context of your text to generate appropriate musical pieces.
 
+## Sample Audio
+[Sample Audio](output.wav)
+
 ## Features
 
 - Generate music from text descriptions
