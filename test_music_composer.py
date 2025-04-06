@@ -2042,8 +2042,468 @@ music_data = {
   ]
 }
 
+# music_data = {
+#   "tempo": 110,
+#   "key_signature": "C",
+#   "time_signature": "4/4",
+#   "genre": "Quirky Chamber Ensemble",
+#   "mood": "Whimsical, playful, mischievous, imaginative, with a humorous resolution",
+#   "notes": [
+    
+#     { "type": "note", "pitch": "C4", "duration": 1.0, "velocity": 70, "instrument": "clarinet", "channel": 0, "effects": [{"type": "reverb_level", "value": 40}] },
+#     { "type": "note", "pitch": "E4", "duration": 1.0, "velocity": 70, "instrument": "clarinet", "channel": 0 },
+#     { "type": "note", "pitch": "G4", "duration": 1.5, "velocity": 70, "instrument": "clarinet", "channel": 0 },
+    
+#     { "type": "note", "pitch": "C3", "duration": 1.0, "velocity": 65, "instrument": "pizzicato_strings", "channel": 5, "effects": [{"type": "reverb_level", "value": 20}] },
+#     { "type": "note", "pitch": "G2", "duration": 1.0, "velocity": 65, "instrument": "pizzicato_strings", "channel": 5, "offset": 2.0 }, 
+
+    
+#     { "type": "chord", "pitches": ["C5", "E5", "G5"], "duration": 0.5, "velocity": 80, "instrument": "marimba", "channel": 4, "effects": [{"type": "reverb_level", "value": 50}] },
+#     { "type": "note", "pitch": "G4", "duration": 0.75, "velocity": 75, "instrument": "pizzicato_strings", "channel": 5, "offset": 4.0 },
+#     { "type": "note", "pitch": "E4", "duration": 0.75, "velocity": 75, "instrument": "pizzicato_strings", "channel": 5, "offset": 4.75 },
+#     { "type": "note", "pitch": "C4", "duration": 1.0, "velocity": 75, "instrument": "pizzicato_strings", "channel": 5, "offset": 5.5 },
+#     { "type": "note", "pitch": "F2", "duration": 1.0, "velocity": 65, "instrument": "pizzicato_strings", "channel": 5, "offset": 4.0 }, 
+#     { "type": "note", "pitch": "C3", "duration": 1.0, "velocity": 65, "instrument": "pizzicato_strings", "channel": 5, "offset": 6.0 },
+
+    
+#     { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 80, "instrument": "clarinet", "channel": 0, "offset": 8.0 },
+#     { "type": "note", "pitch": "A4", "duration": 0.5, "velocity": 80, "instrument": "clarinet", "channel": 0, "offset": 8.5 },
+#     { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 80, "instrument": "clarinet", "channel": 0, "offset": 9.0 },
+#     { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 80, "instrument": "clarinet", "channel": 0, "offset": 9.5 },
+#     { "type": "note", "pitch": "C4", "duration": 1.0, "velocity": 80, "instrument": "clarinet", "channel": 0, "offset": 10.0 },
+#     { "type": "note", "pitch": "C3", "duration": 1.0, "velocity": 70, "instrument": "acoustic_bass", "channel": 3, "offset": 8.0, "effects": [{"type": "reverb_level", "value": 30}] },
+#     { "type": "note", "pitch": "D3", "duration": 1.0, "velocity": 70, "instrument": "acoustic_bass", "channel": 3, "offset": 9.0 },
+#     { "type": "note", "pitch": "E3", "duration": 1.0, "velocity": 70, "instrument": "acoustic_bass", "channel": 3, "offset": 10.0 },
+#     { "type": "note", "pitch": "F3", "duration": 1.0, "velocity": 70, "instrument": "acoustic_bass", "channel": 3, "offset": 11.0 },
+#     { "type": "note", "pitch": "37", "duration": 0.25, "velocity": 60, "instrument": "percussion", "channel": 9, "offset": 8.0 }, 
+#     { "type": "note", "pitch": "37", "duration": 0.25, "velocity": 60, "instrument": "percussion", "channel": 9, "offset": 9.0 },
+#     { "type": "note", "pitch": "37", "duration": 0.25, "velocity": 60, "instrument": "percussion", "channel": 9, "offset": 10.0 },
+#     { "type": "note", "pitch": "37", "duration": 0.25, "velocity": 60, "instrument": "percussion", "channel": 9, "offset": 11.0 },
+
+    
+#     { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 85, "instrument": "violin", "channel": 1, "offset": 12.0, "effects": [{"type": "reverb_level", "value": 40}] },
+#     { "type": "note", "pitch": "C5", "duration": 0.5, "velocity": 85, "instrument": "violin", "channel": 1, "offset": 12.5 },
+#     { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 85, "instrument": "violin", "channel": 1, "offset": 13.0 },
+#     { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 85, "instrument": "violin", "channel": 1, "offset": 13.5 }, 
+#     { "type": "note", "pitch": "G4", "duration": 1.0, "velocity": 85, "instrument": "violin", "channel": 1, "offset": 14.0 },
+#     { "type": "note", "pitch": "G3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 12.0 },
+#     { "type": "note", "pitch": "A3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 13.0 },
+#     { "type": "note", "pitch": "B3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 14.0 },
+#     { "type": "note", "pitch": "C4", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 15.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 12.0 }, 
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 12.5 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 13.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 13.5 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 14.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 14.5 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 15.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 15.5 },
+
+    
+#     { "type": "note", "pitch": "C5", "duration": 0.25, "velocity": 85, "instrument": "marimba", "channel": 4, "offset": 16.0 }, 
+#     { "type": "note", "pitch": "D5", "duration": 0.25, "velocity": 85, "instrument": "marimba", "channel": 4, "offset": 16.25 },
+#     { "type": "note", "pitch": "E5", "duration": 0.25, "velocity": 85, "instrument": "marimba", "channel": 4, "offset": 16.5 },
+#     { "type": "note", "pitch": "F5", "duration": 0.25, "velocity": 85, "instrument": "marimba", "channel": 4, "offset": 16.75 }, 
+#     { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 90, "instrument": "clarinet", "channel": 0, "offset": 16.0 },
+#     { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "clarinet", "channel": 0, "offset": 16.5 },
+#     { "type": "note", "pitch": "C5", "duration": 0.5, "velocity": 90, "instrument": "clarinet", "channel": 0, "offset": 17.0 },
+#     { "type": "note", "pitch": "E5", "duration": 0.5, "velocity": 90, "instrument": "clarinet", "channel": 0, "offset": 17.5 },
+#     { "type": "note", "pitch": "G5", "duration": 1.0, "velocity": 90, "instrument": "clarinet", "channel": 0, "offset": 18.0 },
+#     { "type": "note", "pitch": "F3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 16.0 },
+#     { "type": "note", "pitch": "E3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 17.0 },
+#     { "type": "note", "pitch": "D3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 18.0 },
+#     { "type": "note", "pitch": "G3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 19.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 16.0 }, 
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 16.5 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 17.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 17.5 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 18.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 18.5 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 19.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 19.5 },
+
+    
+#     { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "pizzicato_strings", "channel": 5, "offset": 20.5 }, 
+#     { "type": "note", "pitch": "C5", "duration": 0.5, "velocity": 90, "instrument": "pizzicato_strings", "channel": 5, "offset": 21.0 },
+#     { "type": "note", "pitch": "E5", "duration": 0.5, "velocity": 90, "instrument": "pizzicato_strings", "channel": 5, "offset": 21.75 },
+#     { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "pizzicato_strings", "channel": 5, "offset": 22.25 },
+#     { "type": "note", "pitch": "C5", "duration": 1.25, "velocity": 90, "instrument": "pizzicato_strings", "channel": 5, "offset": 22.75 },
+#     { "type": "chord", "pitches": ["G5", "C6"], "duration": 0.5, "velocity": 80, "instrument": "glockenspiel", "channel": 6, "offset": 20.5, "effects": [{"type": "reverb_level", "value": 60}] },
+#     { "type": "chord", "pitches": ["E5", "G5"], "duration": 0.5, "velocity": 80, "instrument": "glockenspiel", "channel": 6, "offset": 21.75 },
+#     { "type": "note", "pitch": "C3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 20.0 },
+#     { "type": "note", "pitch": "G3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 21.0 },
+#     { "type": "note", "pitch": "C3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 22.0 },
+#     { "type": "note", "pitch": "G3", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass", "channel": 3, "offset": 23.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 70, "instrument": "percussion", "channel": 9, "offset": 20.0 }, 
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 70, "instrument": "percussion", "channel": 9, "offset": 20.5 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 70, "instrument": "percussion", "channel": 9, "offset": 21.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 70, "instrument": "percussion", "channel": 9, "offset": 21.5 },
+#     { "type": "note", "pitch": "37", "duration": 0.25, "velocity": 70, "instrument": "percussion", "channel": 9, "offset": 22.0 }, 
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 70, "instrument": "percussion", "channel": 9, "offset": 22.5 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 70, "instrument": "percussion", "channel": 9, "offset": 23.0 },
+#     { "type": "note", "pitch": "42", "duration": 0.25, "velocity": 70, "instrument": "percussion", "channel": 9, "offset": 23.5 },
+
+    
+#     { "type": "note", "pitch": "C5", "duration": 2.0, "velocity": 100, "instrument": "clarinet", "channel": 0, "offset": 24.0, "vibrato": {"depth": 0.1, "speed": 4, "steps":16} },
+#     { "type": "note", "pitch": "E5", "duration": 2.0, "velocity": 100, "instrument": "violin", "channel": 1, "offset": 24.0, "vibrato": {"depth": 0.1, "speed": 4, "steps":16} },
+#     { "type": "note", "pitch": "G3", "duration": 2.0, "velocity": 95, "instrument": "cello", "channel": 2, "offset": 24.0, "effects": [{"type": "reverb_level", "value": 45}], "vibrato": {"depth": 0.1, "speed": 3, "steps":16} },
+#     { "type": "note", "pitch": "C3", "duration": 2.0, "velocity": 95, "instrument": "acoustic_bass", "channel": 3, "offset": 24.0 },
+#     { "type": "note", "pitch": "D5", "duration": 1.0, "velocity": 100, "instrument": "clarinet", "channel": 0, "offset": 26.0 },
+#     { "type": "note", "pitch": "F5", "duration": 1.0, "velocity": 100, "instrument": "violin", "channel": 1, "offset": 26.0 },
+#     { "type": "note", "pitch": "G3", "duration": 1.0, "velocity": 95, "instrument": "cello", "channel": 2, "offset": 26.0 },
+#     { "type": "note", "pitch": "G2", "duration": 1.0, "velocity": 95, "instrument": "acoustic_bass", "channel": 3, "offset": 26.0 },
+#     { "type": "note", "pitch": "E5", "duration": 1.0, "velocity": 100, "instrument": "clarinet", "channel": 0, "offset": 27.0 },
+#     { "type": "note", "pitch": "G5", "duration": 1.0, "velocity": 100, "instrument": "violin", "channel": 1, "offset": 27.0 },
+#     { "type": "note", "pitch": "C3", "duration": 1.0, "velocity": 95, "instrument": "cello", "channel": 2, "offset": 27.0 },
+#     { "type": "note", "pitch": "C2", "duration": 1.0, "velocity": 95, "instrument": "acoustic_bass", "channel": 3, "offset": 27.0 },
+#     { "type": "note", "pitch": "53", "duration": 4.0, "velocity": 80, "instrument": "percussion", "channel": 9, "offset": 24.0 }, 
+
+    
+#     { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 70, "instrument": "clarinet", "channel": 0, "offset": 28.0 },
+#     { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 70, "instrument": "clarinet", "channel": 0, "offset": 28.5 },
+#     { "type": "note", "pitch": "D4", "duration": 0.5, "velocity": 70, "instrument": "clarinet", "channel": 0, "offset": 29.0 },
+#     { "type": "note", "pitch": "C4", "duration": 1.0, "velocity": 70, "instrument": "clarinet", "channel": 0, "offset": 29.5 },
+#     { "type": "note", "pitch": "G4", "duration": 0.25, "velocity": 75, "instrument": "marimba", "channel": 4, "offset": 28.0 },
+#     { "type": "note", "pitch": "E4", "duration": 0.25, "velocity": 75, "instrument": "marimba", "channel": 4, "offset": 28.25 },
+#     { "type": "note", "pitch": "C4", "duration": 0.5, "velocity": 75, "instrument": "marimba", "channel": 4, "offset": 28.5 },
+#     { "type": "note", "pitch": "G2", "duration": 1.0, "velocity": 60, "instrument": "pizzicato_strings", "channel": 5, "offset": 28.0 }, 
+#     { "type": "note", "pitch": "C2", "duration": 1.0, "velocity": 60, "instrument": "pizzicato_strings", "channel": 5, "offset": 30.0 },
+#     { "type": "note", "pitch": "115", "duration": 0.5, "velocity": 65, "instrument": "percussion", "channel": 9, "offset": 31.0 } 
+#   ]
+# }
+
+# music_data = {
+#   "genre": "Action Score",
+#   "key_signature": "Cm",
+#   "mood": "Tense, Action-packed",
+#   "notes": [
+#     {
+#       "type": "note",
+#       "pitch": "C3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 0.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 0.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "C3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 1.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 1.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "C5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 2.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "D#5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 2.25,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 2.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "A#4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 2.75,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "C5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 3.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "D#5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 3.25,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 3.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "A#4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 3.75,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "C3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 4.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 4.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "C3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 5.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 5.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "C5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 6.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "D#5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 6.25,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 6.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "A#4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 6.75,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "C5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 7.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "D#5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 7.25,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 7.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "A#4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 7.75,
+#       "effects": []
+#     },
+#         {
+#       "type": "note",
+#       "pitch": "C3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 8.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 8.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "C3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 9.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G3",
+#       "duration": 0.5,
+#       "velocity": 90,
+#       "instrument": "acoustic_bass",
+#       "channel": 0,
+#       "offset": 9.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "C5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 10.0,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "D#5",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 10.25,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "G4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 10.5,
+#       "effects": []
+#     },
+#     {
+#       "type": "note",
+#       "pitch": "A#4",
+#       "duration": 0.25,
+#       "velocity": 100,
+#       "instrument": "violin",
+#       "channel": 1,
+#       "offset": 10.75,
+#       "effects": []
+#     }
+#   ],
+#   "tempo": 120,
+#   "time_signature": "4/4"
+# }
+
 jazz_file = musicComposer.generate_music(
-    """Create atleast 1 minute music: The alley was silent—too silent. Ethan’s pulse pounded as he gripped his pistol, scanning the shadows. A flicker of movement. He spun, but too late—a blade sliced through the air, missing his throat by an inch. He countered, shoving his attacker against the wall, but another figure lunged from behind. A gunshot roared. The second man dropped.  
+    """Create atleast 10 second music: The alley was silent—too silent. Ethan’s pulse pounded as he gripped his pistol, scanning the shadows. A flicker of movement. He spun, but too late—a blade sliced through the air, missing his throat by an inch. He countered, shoving his attacker against the wall, but another figure lunged from behind. A gunshot roared. The second man dropped.  
 
 Panting, Ethan turned to see Ava lowering her smoking gun. "Close call," she muttered.  
 

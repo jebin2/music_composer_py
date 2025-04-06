@@ -18,7 +18,7 @@ class PitchEffectKit:
 	@staticmethod
 	def to_pitchwheel(value: float) -> int:
 		"""Convert normalized float (-1.0 to 1.0) to pitchwheel value (-8192 to 8191)"""
-		return PitchEffectKit.normalize(value) - PitchEffectKit.CENTER
+		return PitchEffectKit.normalize(value)
 
 	@staticmethod
 	def get_pitch_values(note_data):

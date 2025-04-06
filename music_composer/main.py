@@ -52,8 +52,52 @@ class MusicComposer:
 			logger_config.warning(f"Skipping {music_str}. {e}.")
 			return []
 
+	def __sort_notes_by_offset(self, music_info):
+		"""
+		Sort notes by offset within each instrument/channel combination to ensure
+		proper chronological order for MIDI event timing.
+		
+		Args:
+			music_info (dict): The music information dictionary containing notes
+			
+		Returns:
+			dict: Updated music_info with sorted notes
+		"""
+		# Create a dictionary to group notes by instrument and channel
+		grouped_notes = {}
+		
+		# Group the notes
+		for note_data in music_info["notes"]:
+			instrument_name = note_data.get("instrument", "acoustic_grand").lower()
+			is_drum = DrumKit.is_drum(instrument_name)
+			channel = 9 if is_drum else note_data.get("channel", 0)
+			
+			# Create a unique key for each instrument/channel combination
+			track_key = f"{instrument_name}_{channel}"
+			
+			if track_key not in grouped_notes:
+				grouped_notes[track_key] = []
+				
+			grouped_notes[track_key].append(note_data)
+		
+		# Sort each group by offset
+		for track_key in grouped_notes:
+			grouped_notes[track_key].sort(key=lambda x: float(x.get("offset", 0.0)))
+		
+		# Flatten the sorted groups back into a single list
+		sorted_notes = []
+		for track_notes in grouped_notes.values():
+			sorted_notes.extend(track_notes)
+		
+		# Update the music_info dictionary
+		music_info["notes"] = sorted_notes
+		
+		return music_info
+
 	def __create_midi_file(self, music_info):
 		try:
+			# Sort notes by offset for each instrument/channel
+			music_info = self.__sort_notes_by_offset(music_info)
 			mid = MidiFile()
 			
 			# Create a conductor track for tempo and key signature
@@ -128,20 +172,43 @@ class MusicComposer:
 				
 				if not midi_notes:
 					continue
-				
+
+				# Track running time in ticks
+				if not hasattr(self, "_track_times"):
+					self._track_times = {}
+
+				if track_key not in self._track_times:
+					self._track_times[track_key] = 0
+
+				offset_beats = float(note_data.get("offset", 0.0))
+				event_time = int(offset_beats * self.__duration)
+
+				# Calculate delta from the current track time
+				delta_time = max(0, event_time - self._track_times[track_key])
+
+				# Update the track time to the absolute position
+				self._track_times[track_key] = event_time
+
 				# Add note_on events
 				for i, note_value in enumerate(midi_notes):
-					track.append(Message('note_on', note=note_value, velocity=velocity, channel=channel, time=0 if i > 0 else 0))
-				
+					track.append(Message(
+						'note_on',
+						note=note_value,
+						velocity=velocity,
+						channel=channel,
+						time=delta_time if i == 0 else 0
+					))
+
 				# Add note_off events
 				for i, note_value in enumerate(midi_notes):
-					if i < len(midi_notes) - 1:
-						track.append(Message('note_off', note=note_value, velocity=0, channel=channel, time=0))
-					else:
-						track.append(Message('note_off', note=note_value, velocity=0, channel=channel, time=ticks))
-
-				# if added_pitch_bend:
-				# 	track.append(Message('pitchwheel', pitch=0, channel=channel, time=0))
+					note_off_time = ticks if i == 0 else 0
+					track.append(Message(
+						'note_off',
+						note=note_value,
+						velocity=0,
+						channel=channel,
+						time=note_off_time
+					))
 			
 			# Save the MIDI file
 			if os.path.exists(self.__output_midi):
@@ -189,13 +256,10 @@ class MusicComposer:
 					type = genai.types.Type.ARRAY,
 					items = genai.types.Schema(
 						type = genai.types.Type.OBJECT,
-						required = ["type", "duration", "velocity", "instrument", "channel", "effects"],
+						required = ["type", "duration", "velocity", "instrument", "channel", "effects", "offset"],
 						properties = {
 							"type": genai.types.Schema(
 								type = genai.types.Type.STRING,
-							),
-							"pitch_bend": genai.types.Schema(
-								type = genai.types.Type.NUMBER,
 							),
 							"pitch_bend": genai.types.Schema(
 								type = genai.types.Type.OBJECT,
@@ -224,6 +288,9 @@ class MusicComposer:
 									),
 								},
 							),
+							"pitch": genai.types.Schema(
+								type = genai.types.Type.STRING,
+							),
 							"pitches": genai.types.Schema(
 								type = genai.types.Type.ARRAY,
 								items = genai.types.Schema(
@@ -240,6 +307,9 @@ class MusicComposer:
 								type = genai.types.Type.STRING,
 							),
 							"channel": genai.types.Schema(
+								type = genai.types.Type.NUMBER,
+							),
+							"offset": genai.types.Schema(
 								type = genai.types.Type.NUMBER,
 							),
 							"effects": genai.types.Schema(

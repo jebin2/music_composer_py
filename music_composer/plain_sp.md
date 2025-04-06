@@ -133,18 +133,19 @@ Generate a comprehensive JSON structure that includes:
 ### Percussion (Channel 9)
 ```json
 {
+  "bass_drum": 35,
   "acoustic_bass_drum": 35,
-  "bass_drum": 36,
+  "bass_drum_1": 36,
   "side_stick": 37,
-  "acoustic_snare": 38,
+  "snare": 38,
   "hand_clap": 39,
   "electric_snare": 40,
   "low_floor_tom": 41,
-  "closed_hi_hat": 42,
+  "closed_hihat": 42,
   "high_floor_tom": 43,
-  "pedal_hi_hat": 44,
+  "pedal_hihat": 44,
   "low_tom": 45,
-  "open_hi_hat": 46,
+  "open_hihat": 46,
   "low_mid_tom": 47,
   "hi_mid_tom": 48,
   "crash_cymbal_1": 49,
@@ -162,7 +163,25 @@ Generate a comprehensive JSON structure that includes:
   "low_bongo": 61,
   "mute_hi_conga": 62,
   "open_hi_conga": 63,
-  "low_conga": 64
+  "low_conga": 64,
+  "high_timbale": 65,
+  "low_timbale": 66,
+  "high_agogo": 67,
+  "low_agogo": 68,
+  "cabasa": 69,
+  "maracas": 70,
+  "short_whistle": 71,
+  "long_whistle": 72,
+  "short_guiro": 73,
+  "long_guiro": 74,
+  "claves": 75,
+  "hi_wood_block": 76,
+  "low_wood_block": 77,
+  "mute_cuica": 78,
+  "open_cuica": 79,
+  "mute_triangle": 80,
+  "open_triangle": 81,
+  "reverse_cymbal": 62
 }
 ```
 
