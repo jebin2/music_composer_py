@@ -1441,6 +1441,607 @@ music_data = {
 
   ]
 }
+
+music_data = {
+  "tempo": 150,
+  "key_signature": "Em",
+  "time_signature": "4/4",
+  "genre": "Action/Thriller Score",
+  "mood": "Tense, urgent, chaotic, suspenseful",
+  "notes": [
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 8.0, "velocity": 55, "instrument": "synth_bass_1", "channel": 0, "effects": [{"type": "reverb_level", "value": 40}]},
+    { "type": "note", "pitch": "B1", "duration": 8.0, "velocity": 50, "instrument": "synth_bass_1", "channel": 0},
+    { "type": "note", "pitch": "E2", "duration": 16.0, "velocity": 60, "instrument": "synth_bass_1", "channel": 0},
+    
+    { "type": "note", "pitch": "G#3", "duration": 0.25, "velocity": 70, "instrument": "pizzicato_strings", "channel": 1}, { "type": "note", "pitch": "A3", "duration": 0.25, "velocity": 70, "instrument": "pizzicato_strings", "channel": 1}, 
+    { "type": "note", "pitch": "D#4", "duration": 0.25, "velocity": 75, "instrument": "pizzicato_strings", "channel": 1, "offset": 1.0}, 
+    { "type": "note", "pitch": "B3", "duration": 0.25, "velocity": 70, "instrument": "pizzicato_strings", "channel": 1, "offset": 2.0}, 
+    { "type": "note", "pitch": "C4", "duration": 0.25, "velocity": 75, "instrument": "pizzicato_strings", "channel": 1, "offset": 4.5}, { "type": "note", "pitch": "B3", "duration": 0.25, "velocity": 70, "instrument": "pizzicato_strings", "channel": 1}, 
+    { "type": "note", "pitch": "F#4", "duration": 0.25, "velocity": 80, "instrument": "pizzicato_strings", "channel": 1, "offset": 6.0}, 
+    
+    { "type": "note", "pitch": "G3", "duration": 0.25, "velocity": 72, "instrument": "pizzicato_strings", "channel": 1, "offset": 8.0}, { "type": "note", "pitch": "A3", "duration": 0.25, "velocity": 72, "instrument": "pizzicato_strings", "channel": 1}, 
+    { "type": "note", "pitch": "E4", "duration": 0.25, "velocity": 77, "instrument": "pizzicato_strings", "channel": 1, "offset": 9.0}, 
+    { "type": "note", "pitch": "C#4", "duration": 0.25, "velocity": 72, "instrument": "pizzicato_strings", "channel": 1, "offset": 10.0}, 
+    { "type": "note", "pitch": "D4", "duration": 0.25, "velocity": 78, "instrument": "pizzicato_strings", "channel": 1, "offset": 12.5}, { "type": "note", "pitch": "C4", "duration": 0.25, "velocity": 72, "instrument": "pizzicato_strings", "channel": 1}, 
+    { "type": "note", "pitch": "G#4", "duration": 0.25, "velocity": 82, "instrument": "pizzicato_strings", "channel": 1, "offset": 14.0}, 
+    
+    { "type": "chord", "pitches": ["E3", "B3", "D4"], "duration": 16.0, "velocity": 35, "instrument": "fx_4_atmosphere", "channel": 2, "effects": [{"type": "reverb_level", "value": 60}]},
+    { "type": "chord", "pitches": ["G3", "B3", "E4"], "duration": 16.0, "velocity": 40, "instrument": "fx_4_atmosphere", "channel": 2, "offset": 16.0},
+    
+    { "type": "note", "pitch": "E1", "duration": 4.0, "velocity": 45, "instrument": "timpani", "channel": 3, "offset": 12.0},
+    { "type": "note", "pitch": "B1", "duration": 4.0, "velocity": 50, "instrument": "timpani", "channel": 3, "offset": 28.0},
+
+    
+    { "type": "note", "pitch": "C5", "duration": 1.0, "velocity": 115, "instrument": "orchestra_hit", "channel": 4, "offset": 32.0},
+    { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 100, "instrument": "taiko_drum", "channel": 9, "offset": 32.0}, 
+    { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 100, "instrument": "taiko_drum", "channel": 9, "offset": 32.5}, 
+    { "type": "note", "pitch": "C#5", "duration": 0.25, "velocity": 120, "instrument": "acoustic_snare", "channel": 9, "offset": 33.0}, 
+
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 36.0}, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 36.5},
+    { "type": "note", "pitch": "G2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 37.0}, { "type": "note", "pitch": "G2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 37.5},
+    { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 38.0}, { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 38.5},
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 39.0}, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 39.5},
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 92.0}, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 92.5},
+    { "type": "note", "pitch": "G2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 93.0}, { "type": "note", "pitch": "G2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 93.5},
+    { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 94.0}, { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 94.5},
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 95.0}, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 0, "offset": 95.5},
+
+    
+    
+    
+    
+    { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 105, "instrument": "acoustic_bass_drum", "channel": 9, "offset": 36.0}, 
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9, "offset": 36.0}, 
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9, "offset": 36.5},
+    { "type": "note", "pitch": "D2", "duration": 0.5, "velocity": 110, "instrument": "acoustic_snare", "channel": 9, "offset": 37.0}, 
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9, "offset": 37.0},
+    { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 105, "instrument": "acoustic_bass_drum", "channel": 9, "offset": 37.5},
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9, "offset": 37.5},
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9, "offset": 38.0},
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9, "offset": 38.5},
+    { "type": "note", "pitch": "D2", "duration": 0.5, "velocity": 110, "instrument": "acoustic_snare", "channel": 9, "offset": 39.0}, 
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9, "offset": 39.0},
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9, "offset": 39.5},
+    
+    { "type": "note", "pitch": "E2", "duration": 0.25, "velocity": 125, "instrument": "acoustic_snare", "channel": 9, "offset": 68.0}, 
+
+    
+    
+    
+    
+    { "type": "chord", "pitches": ["E3", "B3", "E4"], "duration": 1.0, "velocity": 100, "instrument": "distortion_guitar", "channel": 5, "offset": 36.0}, 
+    { "type": "chord", "pitches": ["G3", "D4", "G4"], "duration": 1.0, "velocity": 100, "instrument": "distortion_guitar", "channel": 5, "offset": 38.0}, 
+    { "type": "chord", "pitches": ["C3", "G3", "C4"], "duration": 1.0, "velocity": 100, "instrument": "distortion_guitar", "channel": 5, "offset": 40.0}, 
+    { "type": "chord", "pitches": ["B2", "F#3", "B3"], "duration": 1.0, "velocity": 100, "instrument": "distortion_guitar", "channel": 5, "offset": 42.0}, 
+
+    
+    
+    
+    
+    { "type": "note", "pitch": "B4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 36.0}, { "type": "note", "pitch": "C5", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 36.25}, { "type": "note", "pitch": "B4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 36.5}, { "type": "note", "pitch": "A4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 36.75},
+    { "type": "note", "pitch": "G4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 37.0}, { "type": "note", "pitch": "F#4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 37.25}, { "type": "note", "pitch": "G4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 37.5}, { "type": "note", "pitch": "A4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 37.75},
+    { "type": "note", "pitch": "E4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 38.0}, { "type": "note", "pitch": "F#4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 38.25}, { "type": "note", "pitch": "G4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 38.5}, { "type": "note", "pitch": "A4", "duration": 0.25, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 38.75},
+    { "type": "note", "pitch": "B4", "duration": 1.0, "velocity": 95, "instrument": "string_ensemble_1", "channel": 1, "offset": 39.0},
+
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 8.0, "velocity": 60, "instrument": "synth_bass_1", "channel": 0, "offset": 96.0},
+    
+    { "type": "note", "pitch": "F#4", "duration": 4.0, "velocity": 50, "instrument": "ride_cymbal_1", "channel": 9, "offset": 96.0}, 
+    
+    { "type": "note", "pitch": "E4", "duration": 6.0, "velocity": 75, "instrument": "cello", "channel": 6, "offset": 97.0, "vibrato": {"depth": 0.15, "speed": 4, "steps":16}},
+    
+    { "type": "chord", "pitches": ["G4", "B4"], "duration": 8.0, "velocity": 65, "instrument": "string_ensemble_1", "channel": 1, "offset": 96.0},
+    
+
+    
+    { "type": "chord", "pitches": ["C#4", "G4", "C#5", "E5"], "duration": 2.0, "velocity": 120, "instrument": "synth_brass_1", "channel": 7, "offset": 104.0},
+    { "type": "note", "pitch": "C#2", "duration": 2.0, "velocity": 110, "instrument": "crash_cymbal_1", "channel": 9, "offset": 104.0}, 
+    
+    { "type": "note", "pitch": "D2", "duration": 0.5, "velocity": 115, "instrument": "acoustic_snare", "channel": 9, "offset": 107.0}, 
+    { "type": "note", "pitch": "D2", "duration": 0.5, "velocity": 115, "instrument": "acoustic_snare", "channel": 9, "offset": 107.5},
+
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 0.25, "velocity": 105, "instrument": "synth_bass_1", "channel": 0, "offset": 108.0}, { "type": "note", "pitch": "E2", "duration": 0.25, "velocity": 105, "instrument": "synth_bass_1", "channel": 0, "offset": 108.25}, 
+    
+    { "type": "note", "pitch": "E2", "duration": 0.25, "velocity": 105, "instrument": "synth_bass_1", "channel": 0, "offset": 175.75},
+
+    
+    
+    
+    { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 110, "instrument": "acoustic_bass_drum", "channel": 9, "offset": 108.0}, 
+    { "type": "note", "pitch": "F#1", "duration": 0.25, "velocity": 95, "instrument": "closed_hi_hat", "channel": 9, "offset": 108.0}, { "type": "note", "pitch": "F#1", "duration": 0.25, "velocity": 95, "instrument": "closed_hi_hat", "channel": 9, "offset": 108.25}, 
+    { "type": "note", "pitch": "F#1", "duration": 0.25, "velocity": 95, "instrument": "closed_hi_hat", "channel": 9, "offset": 108.5}, { "type": "note", "pitch": "F#1", "duration": 0.25, "velocity": 95, "instrument": "closed_hi_hat", "channel": 9, "offset": 108.75},
+    { "type": "note", "pitch": "D2", "duration": 0.5, "velocity": 115, "instrument": "acoustic_snare", "channel": 9, "offset": 109.0}, 
+    { "type": "note", "pitch": "F#1", "duration": 0.25, "velocity": 95, "instrument": "closed_hi_hat", "channel": 9, "offset": 109.0}, { "type": "note", "pitch": "F#1", "duration": 0.25, "velocity": 95, "instrument": "closed_hi_hat", "channel": 9, "offset": 109.25},
+    { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 110, "instrument": "acoustic_bass_drum", "channel": 9, "offset": 109.5},
+    { "type": "note", "pitch": "F#1", "duration": 0.25, "velocity": 95, "instrument": "closed_hi_hat", "channel": 9, "offset": 109.5}, { "type": "note", "pitch": "F#1", "duration": 0.25, "velocity": 95, "instrument": "closed_hi_hat", "channel": 9, "offset": 109.75},
+    { "type": "note", "pitch": "C#2", "duration": 1.0, "velocity": 110, "instrument": "crash_cymbal_1", "channel": 9, "offset": 110.0}, 
+    { "type": "note", "pitch": "F#1", "duration": 0.25, "velocity": 95, "instrument": "closed_hi_hat", "channel": 9, "offset": 110.0}, 
+    
+    { "type": "note", "pitch": "C#2", "duration": 2.0, "velocity": 120, "instrument": "crash_cymbal_1", "channel": 9, "offset": 172.0}, 
+
+    
+    
+    
+    { "type": "note", "pitch": "E4", "duration": 0.125, "velocity": 100, "instrument": "tremolo_strings", "channel": 1, "offset": 108.0}, { "type": "note", "pitch": "B4", "duration": 0.125, "velocity": 100, "instrument": "tremolo_strings", "channel": 1, "offset": 108.125}, 
+    { "type": "note", "pitch": "E4", "duration": 0.125, "velocity": 100, "instrument": "tremolo_strings", "channel": 1, "offset": 108.25}, { "type": "note", "pitch": "B4", "duration": 0.125, "velocity": 100, "instrument": "tremolo_strings", "channel": 1, "offset": 108.375},
+    
+    
+    { "type": "note", "pitch": "E5", "duration": 0.125, "velocity": 110, "instrument": "string_ensemble_1", "channel": 1, "offset": 112.0}, { "type": "note", "pitch": "F#5", "duration": 0.125, "velocity": 110, "instrument": "string_ensemble_1", "channel": 1, "offset": 112.125},
+    { "type": "note", "pitch": "G5", "duration": 0.125, "velocity": 110, "instrument": "string_ensemble_1", "channel": 1, "offset": 112.25}, { "type": "note", "pitch": "A5", "duration": 0.125, "velocity": 110, "instrument": "string_ensemble_1", "channel": 1, "offset": 112.375},
+    { "type": "note", "pitch": "B5", "duration": 0.125, "velocity": 110, "instrument": "string_ensemble_1", "channel": 1, "offset": 112.5}, { "type": "note", "pitch": "C6", "duration": 0.125, "velocity": 110, "instrument": "string_ensemble_1", "channel": 1, "offset": 112.625},
+    { "type": "note", "pitch": "D6", "duration": 0.125, "velocity": 110, "instrument": "string_ensemble_1", "channel": 1, "offset": 112.75}, { "type": "note", "pitch": "E6", "duration": 0.125, "velocity": 110, "instrument": "string_ensemble_1", "channel": 1, "offset": 112.875},
+
+    
+    
+    
+    { "type": "chord", "pitches": ["E3", "B3"], "duration": 0.25, "velocity": 105, "instrument": "distortion_guitar", "channel": 5, "offset": 108.0}, { "type": "chord", "pitches": ["E3", "B3"], "duration": 0.25, "velocity": 90, "instrument": "distortion_guitar", "channel": 5, "offset": 108.25}, 
+    { "type": "chord", "pitches": ["E3", "B3"], "duration": 0.25, "velocity": 105, "instrument": "distortion_guitar", "channel": 5, "offset": 108.5}, { "type": "chord", "pitches": ["E3", "B3"], "duration": 0.25, "velocity": 90, "instrument": "distortion_guitar", "channel": 5, "offset": 108.75},
+    
+
+    
+    { "type": "note", "pitch": "A4", "duration": 2.0, "velocity": 80, "instrument": "reverse_cymbal", "channel": 9, "offset": 116.0}, 
+    { "type": "note", "pitch": "A4", "duration": 2.0, "velocity": 85, "instrument": "reverse_cymbal", "channel": 9, "offset": 132.0}, 
+    { "type": "note", "pitch": "A4", "duration": 4.0, "velocity": 90, "instrument": "reverse_cymbal", "channel": 9, "offset": 168.0}  
+  ]
+}
+
+music_data = {
+  "tempo": 120,
+  "key_signature": "Em",
+  "time_signature": "4/4",
+  "genre": "Action/Thriller Score",
+  "mood": "Tense, suspenseful, dramatic, urgent",
+  "notes": [
+    
+    { "type": "note", "pitch": "E2", "duration": 4.0, "velocity": 50, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 40, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+
+    { "type": "note", "pitch": "B2", "duration": 4.0, "velocity": 50, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 40, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+
+    { "type": "note", "pitch": "E2", "duration": 4.0, "velocity": 50, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 40, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+
+    { "type": "note", "pitch": "B2", "duration": 4.0, "velocity": 50, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 40, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 65, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 65, "instrument": "contrabass", "channel": 0 },
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 65, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 65, "instrument": "contrabass", "channel": 0 },
+    
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 45, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C#1", "duration": 1.0, "velocity": 50, "instrument": "side_stick", "channel": 9 }, 
+
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 65, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 65, "instrument": "contrabass", "channel": 0 },
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 65, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 65, "instrument": "contrabass", "channel": 0 },
+    
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 45, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 55, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C#1", "duration": 1.0, "velocity": 50, "instrument": "side_stick", "channel": 9 },
+
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 70, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 70, "instrument": "contrabass", "channel": 0 },
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 70, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 70, "instrument": "contrabass", "channel": 0 },
+    
+    { "type": "chord", "pitches": ["E3", "F#3", "B3"], "duration": 4.0, "velocity": 50, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 65, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 65, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C#1", "duration": 1.0, "velocity": 55, "instrument": "side_stick", "channel": 9 },
+
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 70, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 70, "instrument": "contrabass", "channel": 0 },
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 70, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 70, "instrument": "contrabass", "channel": 0 },
+    
+    { "type": "chord", "pitches": ["E3", "F#3", "B3"], "duration": 4.0, "velocity": 55, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 65, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 65, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C#1", "duration": 1.0, "velocity": 60, "instrument": "side_stick", "channel": 9 },
+
+    
+    { "type": "note", "pitch": "D1", "duration": 0.5, "velocity": 95, "instrument": "acoustic_snare", "channel": 9 }, 
+    { "type": "note", "pitch": "G#2", "duration": 0.5, "velocity": 80, "instrument": "splash_cymbal", "channel": 9 }, 
+    
+    { "type": "note", "pitch": "E4", "duration": 0.25, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 0.25, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "G4", "duration": 0.25, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 0.25, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E4", "duration": 0.25, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 0.25, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "G4", "duration": 0.25, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 0.25, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E2", "duration": 1.0, "velocity": 90, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    
+
+    
+    
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 90, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 90, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 }, 
+    { "type": "note", "pitch": "D1", "duration": 0.5, "velocity": 80, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 0.5, "velocity": 80, "instrument": "acoustic_snare", "channel": 9 },
+    
+    { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 90, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 90, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 0.5, "velocity": 80, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 0.5, "velocity": 80, "instrument": "acoustic_snare", "channel": 9 },
+    
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F4", "duration": 0.5, "velocity": 85, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 90, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 90, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 0.5, "velocity": 80, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 0.5, "velocity": 80, "instrument": "acoustic_snare", "channel": 9 },
+
+    
+    { "type": "note", "pitch": "D1", "duration": 0.5, "velocity": 110, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "C#2", "duration": 1.0, "velocity": 100, "instrument": "crash_cymbal_1", "channel": 9 }, 
+    { "type": "chord", "pitches": ["E4", "G4", "B4"], "duration": 1.0, "velocity": 100, "instrument": "brass_section", "channel": 4 },
+    
+
+    
+    
+    { "type": "note", "pitch": "E4", "duration": 4.0, "velocity": 65, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 50, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    
+    { "type": "note", "pitch": "G4", "duration": 4.0, "velocity": 65, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 50, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    
+    { "type": "note", "pitch": "B4", "duration": 4.0, "velocity": 65, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 50, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+
+    
+    
+    { "type": "note", "pitch": "G4", "duration": 2.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 1.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E4", "duration": 1.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E2", "duration": 4.0, "velocity": 60, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 50, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C#1", "duration": 1.0, "velocity": 50, "instrument": "side_stick", "channel": 9 }, 
+    
+    { "type": "note", "pitch": "G4", "duration": 2.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 1.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E4", "duration": 1.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E2", "duration": 4.0, "velocity": 60, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 50, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C#1", "duration": 1.0, "velocity": 50, "instrument": "side_stick", "channel": 9 }, 
+    
+    { "type": "note", "pitch": "G4", "duration": 2.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 1.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E4", "duration": 1.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E2", "duration": 4.0, "velocity": 60, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 50, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C#1", "duration": 1.0, "velocity": 50, "instrument": "side_stick", "channel": 9 }, 
+    
+    { "type": "note", "pitch": "G4", "duration": 2.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "F#4", "duration": 1.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E4", "duration": 1.0, "velocity": 70, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "E2", "duration": 4.0, "velocity": 60, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 50, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C#1", "duration": 1.0, "velocity": 50, "instrument": "side_stick", "channel": 9 }, 
+
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 2.0, "velocity": 60, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "F#2", "duration": 2.0, "velocity": 65, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["E3", "G3", "B3"], "duration": 4.0, "velocity": 60, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 60, "instrument": "acoustic_bass_drum", "channel": 9 },
+    
+    { "type": "note", "pitch": "G2", "duration": 2.0, "velocity": 70, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "A2", "duration": 2.0, "velocity": 75, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["F#3", "A3", "C4"], "duration": 4.0, "velocity": 70, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 65, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 65, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 65, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 65, "instrument": "acoustic_bass_drum", "channel": 9 },
+    
+    { "type": "note", "pitch": "B2", "duration": 4.0, "velocity": 80, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["G3", "B3", "D4"], "duration": 4.0, "velocity": 75, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 70, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 70, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 70, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 70, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 70, "instrument": "closed_hi_hat", "channel": 9 },
+    
+    { "type": "note", "pitch": "B2", "duration": 4.0, "velocity": 85, "instrument": "contrabass", "channel": 0 },
+    { "type": "chord", "pitches": ["A3", "C4", "E4"], "duration": 4.0, "velocity": 80, "instrument": "pad_8_sweep", "channel": 1, "effects": [{"type": "reverb_level", "value": 40}] }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 75, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 75, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 75, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 75, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 75, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 75, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 75, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 75, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 75, "instrument": "closed_hi_hat", "channel": 9 },
+
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["E4", "G4", "B4"], "duration": 0.5, "velocity": 100, "instrument": "brass_section", "channel": 4 }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C#2", "duration": 1.0, "velocity": 100, "instrument": "crash_cymbal_1", "channel": 9 }, 
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "C5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["G3", "B3", "D4"], "duration": 0.5, "velocity": 100, "instrument": "brass_section", "channel": 4 }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, 
+    { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "A3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "A3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, 
+    { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "E5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["E4", "G4", "B4"], "duration": 0.5, "velocity": 100, "instrument": "brass_section", "channel": 4 }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C#2", "duration": 1.0, "velocity": 100, "instrument": "crash_cymbal_1", "channel": 9 }, 
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "C5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["G3", "B3", "D4"], "duration": 0.5, "velocity": 100, "instrument": "brass_section", "channel": 4 }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, 
+    { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "A3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "A3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, 
+    { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "E5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["E4", "G4", "B4"], "duration": 0.5, "velocity": 100, "instrument": "brass_section", "channel": 4 }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C#2", "duration": 1.0, "velocity": 100, "instrument": "crash_cymbal_1", "channel": 9 }, 
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "C5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["G3", "B3", "D4"], "duration": 0.5, "velocity": 100, "instrument": "brass_section", "channel": 4 }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "C2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, 
+    { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "A3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "A3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, 
+    { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "E5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+
+    
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["E4", "G4", "B4"], "duration": 0.5, "velocity": 100, "instrument": "brass_section", "channel": 4 }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "C#2", "duration": 1.0, "velocity": 100, "instrument": "crash_cymbal_1", "channel": 9 }, 
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    
+    { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "B1", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "G3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "D5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "C5", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "B4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    
+    { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 }, { "type": "note", "pitch": "E2", "duration": 0.5, "velocity": 95, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] }, { "type": "note", "pitch": "E3", "duration": 0.5, "velocity": 95, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "E4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "F#4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] }, { "type": "note", "pitch": "G4", "duration": 0.5, "velocity": 90, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["G3", "B3", "D4"], "duration": 0.5, "velocity": 100, "instrument": "brass_section", "channel": 4 }, 
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 100, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 }, { "type": "note", "pitch": "F#1", "duration": 0.5, "velocity": 90, "instrument": "closed_hi_hat", "channel": 9 },
+    { "type": "note", "pitch": "E1", "duration": 0.25, "velocity": 110, "instrument": "electric_snare", "channel": 9 }, 
+    
+    { "type": "note", "pitch": "E2", "duration": 1.0, "velocity": 110, "instrument": "contrabass", "channel": 0 },
+    { "type": "note", "pitch": "E3", "duration": 1.0, "velocity": 110, "instrument": "synth_bass_1", "channel": 3, "effects": [{"type": "chorus_level", "value": 30}] },
+    { "type": "note", "pitch": "E4", "duration": 1.0, "velocity": 110, "instrument": "string_ensemble_1", "channel": 2, "effects": [{"type": "reverb_level", "value": 40}] },
+    { "type": "chord", "pitches": ["E4", "G4", "B4"], "duration": 1.0, "velocity": 110, "instrument": "brass_section", "channel": 4 },
+    { "type": "note", "pitch": "C1", "duration": 1.0, "velocity": 110, "instrument": "acoustic_bass_drum", "channel": 9 },
+    { "type": "note", "pitch": "D1", "duration": 1.0, "velocity": 110, "instrument": "acoustic_snare", "channel": 9 },
+    { "type": "note", "pitch": "C#2", "duration": 1.0, "velocity": 110, "instrument": "crash_cymbal_1", "channel": 9 } 
+  ]
+}
+
 jazz_file = musicComposer.generate_music(
     """Create atleast 1 minute music: The alley was silent—too silent. Ethan’s pulse pounded as he gripped his pistol, scanning the shadows. A flicker of movement. He spun, but too late—a blade sliced through the air, missing his throat by an inch. He countered, shoving his attacker against the wall, but another figure lunged from behind. A gunshot roared. The second man dropped.  
 
