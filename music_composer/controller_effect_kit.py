@@ -72,18 +72,6 @@ class ControllerEffectKit:
 		"poly_on": 127
 	}
 
-	_ALIASES = {
-		"mod_wheel": "modulation",
-		"main_volume": "volume",
-		"hold": "sustain",
-		"attack": "attack_time",
-		"release": "release_time",
-		"expr": "expression",
-		"reverb_level": "reverb",
-		"chorus_level": "chorus",
-		"panpot": "pan"
-	}
-
 	@classmethod
 	def get_cc_number(cls, name: str) -> int:
 		"""
@@ -91,23 +79,12 @@ class ControllerEffectKit:
 		Defaults to -1 if not found.
 		"""
 		name = name.lower()
-		resolved = cls._ALIASES.get(name, name)
-		return cls._CONTROLLERS.get(resolved, -1)
+		return cls._CONTROLLERS.get(name, -1)
 
 	@classmethod
 	def is_valid(cls, name: str) -> bool:
 		name = name.lower()
-		return name in cls._CONTROLLERS or name in cls._ALIASES
-
-	@classmethod
-	def list_all(cls):
-		"""
-		Print all controller names and their CC numbers.
-		Includes aliases with their mapped values.
-		"""
-		combined = {**cls._CONTROLLERS, **{k: cls._CONTROLLERS[v] for k, v in cls._ALIASES.items()}}
-		for name, cc in sorted(combined.items(), key=lambda x: x[1]):
-			print(f"{name:20} → CC {cc}")
+		return name in cls._CONTROLLERS
 
 	@staticmethod
 	def add_effects(track, channel, note_data):

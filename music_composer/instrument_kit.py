@@ -75,26 +75,6 @@ class InstrumentKit:
         "telephone_ring": 124, "helicopter": 125, "applause": 126, "gunshot": 127
     }
 
-    _ALIASES = {
-        "grand_piano": "acoustic_grand",
-        "bright_piano": "bright_acoustic",
-        "ep1": "electric_piano_1",
-        "ep2": "electric_piano_2",
-        "clean_guitar": "electric_guitar_clean",
-        "jazz_guitar": "electric_guitar_jazz",
-        "muted_guitar": "electric_guitar_muted",
-        "bass_finger": "electric_bass_finger",
-        "bass_pick": "electric_bass_pick",
-        "slap1": "slap_bass_1",
-        "slap2": "slap_bass_2",
-        "strings_1": "string_ensemble_1",
-        "strings_2": "string_ensemble_2",
-        "choir": "choir_aahs",
-        "pad1": "pad_1_new_age",
-        "lead1": "lead_1_square",
-        "lead2": "lead_2_sawtooth"
-    }
-
     @classmethod
     def get_program_number(cls, name: str) -> int:
         """
@@ -102,20 +82,9 @@ class InstrumentKit:
         Defaults to 0 (acoustic_grand) if not found.
         """
         name = name.lower()
-        resolved = cls._ALIASES.get(name, name)
-        return cls._INSTRUMENTS.get(resolved, 0)
+        return cls._INSTRUMENTS.get(name, 0)
 
     @classmethod
     def is_valid(cls, name: str) -> bool:
         name = name.lower()
-        return name in cls._INSTRUMENTS or name in cls._ALIASES
-
-    @classmethod
-    def list_all(cls):
-        """
-        Print all instruments and their MIDI program numbers.
-        Includes aliases.
-        """
-        combined = {**cls._INSTRUMENTS, **{k: cls._INSTRUMENTS[v] for k, v in cls._ALIASES.items()}}
-        for name, prog in sorted(combined.items(), key=lambda x: x[1]):
-            print(f"{name:25} → {prog}")
+        return name in cls._INSTRUMENTS

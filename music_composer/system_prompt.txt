@@ -140,7 +140,7 @@ Generate a comprehensive JSON structure that includes:
   "acoustic_bass_drum": 35,
   "bass_drum_1": 36,
   "side_stick": 37,
-  "snare": 38,
+  "acoustic_snare": 38,
   "hand_clap": 39,
   "electric_snare": 40,
   "low_floor_tom": 41,
