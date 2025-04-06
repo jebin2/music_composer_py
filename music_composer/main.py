@@ -9,8 +9,9 @@ import json
 import traceback
 from .drum_kit import DrumKit
 from .instrument_kit import InstrumentKit
-from .controller_kit import ControllerKit
-from .pitch_bend_kit import PitchBendKit
+from .controller_effect_kit import ControllerEffectKit
+from .pitch_bend_kit import PitchEffectKit
+import random
 
 class MusicComposer:
 
@@ -51,36 +52,6 @@ class MusicComposer:
 			logger_config.warning(f"Skipping {music_str}. {e}.")
 			return []
 
-	def __add_effects(self, track, channel, note_data):
-		"""
-		Add MIDI Control Change messages for effects using ControllerMap
-		
-		Args:
-			track: The MidiTrack to add effects to
-			channel: MIDI channel
-			effects: List of effect dictionaries
-		"""
-		effects = note_data.get("effects", None)
-		if not effects:
-			return
-
-		for effect in effects:
-			effect_type = effect.get("type")
-			value = effect.get("value", 64)
-
-			cc_number = ControllerKit.get_cc_number(effect_type)
-			if cc_number != -1:
-				track.append(Message('control_change', control=cc_number, value=value, channel=channel, time=0))
-
-	def __add_pitch_bends(self, note_data, track, channel):
-		pitch_bend_val = note_data.get("pitch_bend", None)
-		if pitch_bend_val is not None:
-			bend = PitchBendKit.normalize(pitch_bend_val)
-			track.append(Message('pitchwheel', pitch=bend, channel=channel, time=0))
-			return True
-
-		return False
-
 	def __create_midi_file(self, music_info):
 		try:
 			mid = MidiFile()
@@ -111,6 +82,8 @@ class MusicComposer:
 				# 🎯 Detect if it's a drum/percussion instrument
 				is_drum = DrumKit.is_drum(instrument_name)
 				channel = 9 if is_drum else note_data.get("channel", 0)  # Drum = channel 9
+				if not is_drum and channel == 9:
+					channel = random.choice([i for i in range(16) if i != 9])
 				
 				# Create track key
 				track_key = f"{instrument_name}_{channel}"
@@ -129,8 +102,9 @@ class MusicComposer:
 				# Get the track
 				track = instrument_tracks[track_key]
 
-				self.__add_effects(track=track, channel=channel, note_data=note_data)
-				added_pitch_bend = self.__add_pitch_bends(track=track, channel=channel, note_data=note_data)
+				ControllerEffectKit.add_effects(track=track, channel=channel, note_data=note_data)
+				# added_pitch_bend = self.__add_pitch_bends(track=track, channel=channel, note_data=note_data)
+				PitchEffectKit.add_pitch(track=track, channel=channel, ticks=self.__duration, note_data=note_data)
 				
 				# Process note
 				note_duration = float(note_data.get("duration", 1.0))
@@ -141,7 +115,8 @@ class MusicComposer:
 					# 🥁 Get mapped MIDI drum note
 					drum_note = DrumKit.get_midi_note(instrument_name)
 					if drum_note is None:
-						continue  # Unknown drum sound
+						logger_config.warning(f"Unknown drum instrument: {instrument_name}")
+						continue
 					midi_notes = [drum_note]
 				else:
 					if note_data["type"] == "note":
@@ -165,8 +140,8 @@ class MusicComposer:
 					else:
 						track.append(Message('note_off', note=note_value, velocity=0, channel=channel, time=ticks))
 
-				if added_pitch_bend:
-					track.append(Message('pitchwheel', pitch=0, channel=channel, time=0))
+				# if added_pitch_bend:
+				# 	track.append(Message('pitchwheel', pitch=0, channel=channel, time=0))
 			
 			# Save the MIDI file
 			if os.path.exists(self.__output_midi):
@@ -222,8 +197,32 @@ class MusicComposer:
 							"pitch_bend": genai.types.Schema(
 								type = genai.types.Type.NUMBER,
 							),
-							"pitch": genai.types.Schema(
-								type = genai.types.Type.STRING,
+							"pitch_bend": genai.types.Schema(
+								type = genai.types.Type.OBJECT,
+								required = ["start", "end", "steps"],
+								properties = {
+									"start": genai.types.Schema(
+										type = genai.types.Type.NUMBER,
+									),
+									"end": genai.types.Schema(
+										type = genai.types.Type.NUMBER,
+									),
+									"steps": genai.types.Schema(
+										type = genai.types.Type.INTEGER,
+									),
+								},
+							),
+							"vibrato": genai.types.Schema(
+								type = genai.types.Type.OBJECT,
+								required = ["depth", "speed"],
+								properties = {
+									"depth": genai.types.Schema(
+										type = genai.types.Type.NUMBER,
+									),
+									"speed": genai.types.Schema(
+										type = genai.types.Type.INTEGER,
+									),
+								},
 							),
 							"pitches": genai.types.Schema(
 								type = genai.types.Type.ARRAY,

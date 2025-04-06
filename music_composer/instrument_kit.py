@@ -3,6 +3,25 @@ class InstrumentKit:
     Utility class for instrument names (and aliases) to MIDI program numbers.
     Includes support for common aliases and listing capabilities.
     """
+    _INSTRUMENT_CHANNEL_MAP = {
+        "acoustic_grand": 0,         # Piano
+        "electric_piano_1": 1,       # EP
+        "violin": 2,                 # Strings
+        "flute": 3,                  # Woodwind
+        "trumpet": 4,                # Brass
+        "electric_guitar_clean": 5,  # Guitar
+        "synth_bass_1": 6,           # Bass
+        "choir_aahs": 7,             # Choir
+        "pad_1_new_age": 8,          # Pad/Synth
+        "reverse_cymbal": 9,         # 🥁 Percussion (channel 10 in MIDI spec)
+        "lead_1_square": 10,         # Lead Synth
+        "clarinet": 11,              # Reed
+        "xylophone": 12,             # Mallet Percussion
+        "accordion": 13,             # Folk
+        "fx_1_rain": 14,             # FX
+        "orchestra_hit": 15          # Accent Hit
+    }
+
     _INSTRUMENTS = {
         # -- Piano
         "acoustic_grand": 0, "bright_acoustic": 1, "electric_grand": 2, "honky_tonk": 3,
