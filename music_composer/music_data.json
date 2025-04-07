@@ -1,769 +1,409 @@
 {
-  "genre": "Comedy",
-  "key_signature": "C",
-  "mood": "Quirky and whimsical, gradually building to absurd and slightly anxious",
+  "genre": "Electronic Dance Music",
+  "key_signature": "Cm",
+  "mood": "Energetic and driving",
   "notes": [
     {
       "type": "note",
-      "pitch": "C4",
+      "pitch": "C3",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
+      "velocity": 110,
+      "instrument": "synth_bass_2",
       "channel": 0,
       "offset": 0.0,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "G4",
+      "pitch": "C3",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
+      "velocity": 110,
+      "instrument": "synth_bass_2",
       "channel": 0,
       "offset": 0.5,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "A4",
+      "pitch": "G3",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
+      "velocity": 110,
+      "instrument": "synth_bass_2",
       "channel": 0,
       "offset": 1.0,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "G4",
+      "pitch": "Bb3",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
+      "velocity": 110,
+      "instrument": "synth_bass_2",
       "channel": 0,
       "offset": 1.5,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "F4",
+      "pitch": "C3",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
+      "velocity": 110,
+      "instrument": "synth_bass_2",
       "channel": 0,
       "offset": 2.0,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "E4",
+      "pitch": "C3",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
+      "velocity": 110,
+      "instrument": "synth_bass_2",
       "channel": 0,
       "offset": 2.5,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "D4",
+      "pitch": "G3",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
+      "velocity": 110,
+      "instrument": "synth_bass_2",
       "channel": 0,
       "offset": 3.0,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "C4",
+      "pitch": "Bb3",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
+      "velocity": 110,
+      "instrument": "synth_bass_2",
       "channel": 0,
       "offset": 3.5,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "C3",
-      "duration": 4.0,
-      "velocity": 50,
-      "instrument": "acoustic_bass",
-      "channel": 4,
-      "offset": 0.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G2",
-      "duration": 4.0,
-      "velocity": 50,
-      "instrument": "acoustic_bass",
-      "channel": 4,
+      "pitch": "C5",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
       "offset": 4.0,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "A2",
-      "duration": 4.0,
-      "velocity": 50,
-      "instrument": "acoustic_bass",
-      "channel": 4,
-      "offset": 8.0,
+      "pitch": "D#5",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
+      "offset": 4.25,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "C3",
-      "duration": 4.0,
-      "velocity": 50,
-      "instrument": "acoustic_bass",
-      "channel": 4,
-      "offset": 12.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C4",
+      "pitch": "G5",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 4.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
       "offset": 4.5,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "A4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
+      "pitch": "D#5",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
       "offset": 5.0,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "G4",
+      "pitch": "C5",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
+      "offset": 5.25,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "A#4",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
       "offset": 5.5,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "F4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
+      "pitch": "C5",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
       "offset": 6.0,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "E4",
+      "pitch": "D#5",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
+      "offset": 6.25,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "G5",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
       "offset": 6.5,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "D4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
+      "pitch": "D#5",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
       "offset": 7.0,
       "effects": []
     },
     {
       "type": "note",
-      "pitch": "C4",
+      "pitch": "C5",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
+      "offset": 7.25,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "A#4",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
+      "velocity": 95,
+      "instrument": "lead_1_square",
+      "channel": 2,
       "offset": 7.5,
       "effects": []
     },
     {
       "type": "note",
       "pitch": "C4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 8.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 8.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "A4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 9.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 9.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "F4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 10.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "E4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 10.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "D4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 11.0,
+      "duration": 0.25,
+      "velocity": 80,
+      "instrument": "open_hihat",
+      "channel": 9,
+      "offset": 0.0,
       "effects": []
     },
     {
       "type": "note",
       "pitch": "C4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 11.5,
+      "duration": 0.25,
+      "velocity": 80,
+      "instrument": "open_hihat",
+      "channel": 9,
+      "offset": 0.5,
       "effects": []
     },
     {
       "type": "note",
       "pitch": "C4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 12.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 12.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "A4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 13.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 13.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "F4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 14.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "E4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 14.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "D4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 15.0,
+      "duration": 0.25,
+      "velocity": 80,
+      "instrument": "open_hihat",
+      "channel": 9,
+      "offset": 1.0,
       "effects": []
     },
     {
       "type": "note",
       "pitch": "C4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 15.5,
+      "duration": 0.25,
+      "velocity": 80,
+      "instrument": "open_hihat",
+      "channel": 9,
+      "offset": 1.5,
       "effects": []
     },
     {
       "type": "note",
       "pitch": "C4",
-      "duration": 2.0,
-      "velocity": 45,
-      "instrument": "tinkle_bell",
-      "channel": 7,
-      "offset": 16.0,
-      "effects": [
-        {
-          "type": "reverb_level",
-          "value": 80
-        }
-      ]
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 2.0,
-      "velocity": 45,
-      "instrument": "tinkle_bell",
-      "channel": 7,
-      "offset": 18.0,
-      "effects": [
-        {
-          "type": "reverb_level",
-          "value": 80
-        }
-      ]
-    },
-    {
-      "type": "note",
-      "pitch": "A4",
-      "duration": 2.0,
-      "velocity": 45,
-      "instrument": "tinkle_bell",
-      "channel": 7,
-      "offset": 20.0,
-      "effects": [
-        {
-          "type": "reverb_level",
-          "value": 80
-        }
-      ]
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 2.0,
-      "velocity": 45,
-      "instrument": "tinkle_bell",
-      "channel": 7,
-      "offset": 22.0,
-      "effects": [
-        {
-          "type": "reverb_level",
-          "value": 80
-        }
-      ]
-    },
-    {
-      "type": "note",
-      "pitch": "F4",
-      "duration": 2.0,
-      "velocity": 45,
-      "instrument": "tinkle_bell",
-      "channel": 7,
-      "offset": 24.0,
-      "effects": [
-        {
-          "type": "reverb_level",
-          "value": 80
-        }
-      ]
-    },
-    {
-      "type": "note",
-      "pitch": "E4",
-      "duration": 2.0,
-      "velocity": 45,
-      "instrument": "tinkle_bell",
-      "channel": 7,
-      "offset": 26.0,
-      "effects": [
-        {
-          "type": "reverb_level",
-          "value": 80
-        }
-      ]
-    },
-    {
-      "type": "note",
-      "pitch": "D4",
-      "duration": 2.0,
-      "velocity": 45,
-      "instrument": "tinkle_bell",
-      "channel": 7,
-      "offset": 28.0,
-      "effects": [
-        {
-          "type": "reverb_level",
-          "value": 80
-        }
-      ]
-    },
-    {
-      "type": "note",
-      "pitch": "C4",
-      "duration": 2.0,
-      "velocity": 45,
-      "instrument": "tinkle_bell",
-      "channel": 7,
-      "offset": 30.0,
-      "effects": [
-        {
-          "type": "reverb_level",
-          "value": 80
-        }
-      ]
-    },
-    {
-      "type": "note",
-      "pitch": "C3",
-      "duration": 4.0,
-      "velocity": 50,
-      "instrument": "acoustic_bass",
-      "channel": 4,
-      "offset": 16.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G2",
-      "duration": 4.0,
-      "velocity": 50,
-      "instrument": "acoustic_bass",
-      "channel": 4,
-      "offset": 20.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "A2",
-      "duration": 4.0,
-      "velocity": 50,
-      "instrument": "acoustic_bass",
-      "channel": 4,
-      "offset": 24.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C3",
-      "duration": 4.0,
-      "velocity": 50,
-      "instrument": "acoustic_bass",
-      "channel": 4,
-      "offset": 28.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
       "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
+      "velocity": 80,
+      "instrument": "open_hihat",
       "channel": 9,
-      "offset": 32.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 32.25,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 32.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 32.75,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 33.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 33.25,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 33.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 33.75,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 34.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 34.25,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 34.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 34.75,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 35.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 35.25,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 35.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 90,
-      "instrument": "synth_drum",
-      "channel": 9,
-      "offset": 35.75,
+      "offset": 2.0,
       "effects": []
     },
     {
       "type": "note",
       "pitch": "C4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 36.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 36.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "A4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 37.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 37.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "F4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 38.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "E4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 38.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "D4",
-      "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 39.0,
+      "duration": 0.25,
+      "velocity": 80,
+      "instrument": "open_hihat",
+      "channel": 9,
+      "offset": 2.5,
       "effects": []
     },
     {
       "type": "note",
       "pitch": "C4",
+      "duration": 0.25,
+      "velocity": 80,
+      "instrument": "open_hihat",
+      "channel": 9,
+      "offset": 3.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "C4",
+      "duration": 0.25,
+      "velocity": 80,
+      "instrument": "open_hihat",
+      "channel": 9,
+      "offset": 3.5,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "C2",
       "duration": 0.5,
-      "velocity": 60,
-      "instrument": "acoustic_guitar_nylon",
-      "channel": 0,
-      "offset": 39.5,
+      "velocity": 100,
+      "instrument": "bass_drum",
+      "channel": 9,
+      "offset": 0.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "C2",
+      "duration": 0.5,
+      "velocity": 100,
+      "instrument": "bass_drum",
+      "channel": 9,
+      "offset": 2.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "C2",
+      "duration": 0.5,
+      "velocity": 100,
+      "instrument": "bass_drum",
+      "channel": 9,
+      "offset": 4.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "C2",
+      "duration": 0.5,
+      "velocity": 100,
+      "instrument": "bass_drum",
+      "channel": 9,
+      "offset": 6.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "G4",
+      "duration": 0.25,
+      "velocity": 70,
+      "instrument": "electric_guitar_clean",
+      "channel": 6,
+      "offset": 0.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "Bb4",
+      "duration": 0.25,
+      "velocity": 70,
+      "instrument": "electric_guitar_clean",
+      "channel": 6,
+      "offset": 1.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "G4",
+      "duration": 0.25,
+      "velocity": 70,
+      "instrument": "electric_guitar_clean",
+      "channel": 6,
+      "offset": 2.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "Bb4",
+      "duration": 0.25,
+      "velocity": 70,
+      "instrument": "electric_guitar_clean",
+      "channel": 6,
+      "offset": 3.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "G4",
+      "duration": 0.25,
+      "velocity": 70,
+      "instrument": "electric_guitar_clean",
+      "channel": 6,
+      "offset": 4.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "Bb4",
+      "duration": 0.25,
+      "velocity": 70,
+      "instrument": "electric_guitar_clean",
+      "channel": 6,
+      "offset": 5.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "G4",
+      "duration": 0.25,
+      "velocity": 70,
+      "instrument": "electric_guitar_clean",
+      "channel": 6,
+      "offset": 6.0,
+      "effects": []
+    },
+    {
+      "type": "note",
+      "pitch": "Bb4",
+      "duration": 0.25,
+      "velocity": 70,
+      "instrument": "electric_guitar_clean",
+      "channel": 6,
+      "offset": 7.0,
       "effects": []
     }
   ],
-  "tempo": 120.0,
+  "tempo": 128.0,
   "time_signature": "4/4"
 }

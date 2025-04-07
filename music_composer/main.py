@@ -40,7 +40,7 @@ class MusicComposer:
 			self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/GeneralUser-GS.sf2'
 			# self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/FluidR3_GM.sf2'
 		self.__output_midi = f'{os.path.dirname(os.path.abspath(__file__))}/output.mid'
-		self.__output_wav = os.getenv("OUTPUT_WAV")
+		self.__output_wav = os.getenv("OUTPUT_WAV", f'{os.path.dirname(os.path.abspath(__file__))}/static/output.wav')
 		self.__piano_type = piano_type
 		self.__duration = duration
 		self.__instruments = instruments or [{"type": "acoustic_grand", "channel": 0}]
@@ -340,7 +340,7 @@ class MusicComposer:
 			},
 		)
 
-	def generate_music(self, user_prompt: str, genre: str = None, music_data = None) -> str:
+	def generate_music(self, user_prompt: str, instruments = None, music_data = None) -> str:
 		"""
 		Generate music based on user prompt and optionally specified genre
 		
@@ -351,11 +351,13 @@ class MusicComposer:
 		Returns:
 			Path to generated WAV file
 		"""
-		# Add genre context if provided
-		enhanced_prompt = f"{user_prompt} in {genre} style" if genre else user_prompt
 
 		try:
 			enhanced_prompt = user_prompt
+			if instruments:
+				enhanced_prompt = f"""{user_prompt}
+				Use only following instrument:
+				{','.join(instruments)}"""
 		
 			if not music_data:
 				# Generate music data using AI model
