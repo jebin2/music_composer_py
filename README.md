@@ -6,19 +6,12 @@ Create music with AI by simply describing what you want. This project uses Googl
 
 Music Composer is a Python application that translates natural language descriptions into musical compositions. By leveraging Google's Gemini API, it analyzes the emotional content, narrative structure, and context of your text to generate appropriate musical pieces.
 
-## Sample Audio
-<audio controls>
-  <source src="output.wav" type="audio/wav">
-</audio>
-
-
 ## Features
 
 - Generate music from text descriptions
 - Convert AI-generated compositions into MIDI files
 - Option to render MIDI files as WAV audio
-- Customize instrument sounds and musical parameters
-- Standalone application with Docker support
+- Customize instrument sounds
 
 ## Requirements
 
@@ -46,30 +39,18 @@ cd music_composer
 
 2. Install system dependencies:
 ```bash
-# Ubuntu/Debian
-apt-get update && apt-get install -y git fluidsynth libfluidsynth-dev
-
-# macOS
-brew install git fluidsynth
+chmod +x install.sh
+./install.sh
 ```
 
-3. Install Python dependencies:
+3. Activate ENV:
 ```bash
-pip install -e .
+source venv/bin/activate
 ```
 
-### Option 2: Docker Installation
-
-1. Clone the repository:
+4. Run Web Server:
 ```bash
-git clone https://github.com/jebin2/music_composer.git
-cd music_composer
-```
-
-2. Build and run the Docker container:
-```bash
-docker build -t music_composer .
-docker run music_composer
+python -m music_composer.web_server
 ```
 
 ## Environment Variables
@@ -78,12 +59,10 @@ Create a `.env` file in the project root with the following variables:
 
 ```
 GOOGLE_API_KEY=your_google_gemini_api_key
-OUTPUT_WAV=path/to/output/file.wav
 ```
 
 Required environment variables:
 - `GOOGLE_API_KEY`: Your Google API key for accessing Gemini models
-- `OUTPUT_WAV`: Path where the generated WAV file will be saved
 
 ## Usage
 
@@ -101,25 +80,6 @@ output_path = music_composer.generate_music("Create a 1 minute jazz piece that f
 print(f"Music generated and saved to: {output_path}")
 ```
 
-### Advanced Usage
-
-You can customize various parameters:
-
-```python
-from music_composer import MusicComposer
-
-# Initialize with custom parameters
-music_composer = MusicComposer(
-    model_name="gemini-2.0-flash",
-    piano_type="electric_piano1",
-    duration=480,
-    soundfont_path="/path/to/custom/soundfont.sf2"
-)
-
-# Generate music
-output_path = music_composer.generate_music("Create a mysterious and tense composition for a horror movie scene.")
-```
-
 ## Testing
 
 To test the application in an isolated environment:
@@ -128,10 +88,6 @@ To test the application in an isolated environment:
 chmod +x test_in_isolated_env.sh
 ./test_in_isolated_env.sh
 ```
-
-## APP LINK(Beta)
-
-[Linux](https://github.com/jebin2/musiccomposer/releases/download/app-v0.1.0/musiccomposer_0.1.0_amd64.deb)
 
 ## Credits
 

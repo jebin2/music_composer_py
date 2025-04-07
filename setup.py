@@ -11,7 +11,8 @@ setup(
 		"mido",
 		"python-dotenv",
 		"custom_logger @ git+https://github.com/jebin2/custom_logger.git",
-		"gemiwrap @ git+https://github.com/jebin2/gemiwrap.git"
+		"gemiwrap @ git+https://github.com/jebin2/gemiwrap.git",
+		"flask"
 	],
 	author="Jebin Einstein",
 	description="Create music with Google's Gemini API.",

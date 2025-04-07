@@ -1,409 +1,718 @@
 {
-  "genre": "Electronic Dance Music",
+  "genre": "Soundtrack",
   "key_signature": "Cm",
-  "mood": "Energetic and driving",
+  "mood": "Suspenseful, chaotic, awe-inspiring",
   "notes": [
     {
       "type": "note",
       "pitch": "C3",
-      "duration": 0.5,
-      "velocity": 110,
-      "instrument": "synth_bass_2",
-      "channel": 0,
+      "duration": 4.0,
+      "velocity": 40,
+      "instrument": "contrabass",
+      "channel": 4,
       "offset": 0.0,
-      "effects": []
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 90
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "C3",
+      "pitch": "G3",
       "duration": 0.5,
-      "velocity": 110,
-      "instrument": "synth_bass_2",
-      "channel": 0,
+      "velocity": 90,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 0.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C4",
+      "duration": 0.5,
+      "velocity": 95,
+      "instrument": "trumpet",
+      "channel": 8,
       "offset": 0.5,
-      "effects": []
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "G3",
+      "pitch": "G4",
       "duration": 0.5,
-      "velocity": 110,
-      "instrument": "synth_bass_2",
-      "channel": 0,
+      "velocity": 100,
+      "instrument": "trumpet",
+      "channel": 8,
       "offset": 1.0,
-      "effects": []
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "Bb3",
+      "pitch": "C5",
       "duration": 0.5,
-      "velocity": 110,
-      "instrument": "synth_bass_2",
-      "channel": 0,
+      "velocity": 105,
+      "instrument": "trumpet",
+      "channel": 8,
       "offset": 1.5,
-      "effects": []
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "C3",
+      "pitch": "G5",
       "duration": 0.5,
       "velocity": 110,
-      "instrument": "synth_bass_2",
-      "channel": 0,
+      "instrument": "trumpet",
+      "channel": 8,
       "offset": 2.0,
-      "effects": []
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C6",
+      "duration": 0.5,
+      "velocity": 115,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 2.5,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "G6",
+      "duration": 0.5,
+      "velocity": 120,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 3.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C7",
+      "duration": 0.5,
+      "velocity": 125,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 3.5,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C4",
+      "duration": 4.0,
+      "velocity": 80,
+      "instrument": "string_ensemble_1",
+      "channel": 0,
+      "offset": 4.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "Eb4",
+      "duration": 4.0,
+      "velocity": 75,
+      "instrument": "string_ensemble_1",
+      "channel": 1,
+      "offset": 4.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "G4",
+      "duration": 4.0,
+      "velocity": 70,
+      "instrument": "string_ensemble_1",
+      "channel": 2,
+      "offset": 4.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "Bb4",
+      "duration": 4.0,
+      "velocity": 65,
+      "instrument": "string_ensemble_1",
+      "channel": 3,
+      "offset": 4.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 60
+        }
+      ]
     },
     {
       "type": "note",
       "pitch": "C3",
-      "duration": 0.5,
-      "velocity": 110,
-      "instrument": "synth_bass_2",
-      "channel": 0,
-      "offset": 2.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G3",
-      "duration": 0.5,
-      "velocity": 110,
-      "instrument": "synth_bass_2",
-      "channel": 0,
-      "offset": 3.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "Bb3",
-      "duration": 0.5,
-      "velocity": 110,
-      "instrument": "synth_bass_2",
-      "channel": 0,
-      "offset": 3.5,
-      "effects": []
+      "duration": 4.0,
+      "velocity": 40,
+      "instrument": "contrabass",
+      "channel": 4,
+      "offset": 4.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 90
+        }
+      ]
     },
     {
       "type": "note",
       "pitch": "C5",
       "duration": 0.25,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
+      "velocity": 80,
+      "instrument": "synth_strings_2",
+      "channel": 5,
       "offset": 4.0,
-      "effects": []
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "D#5",
+      "pitch": "Eb5",
       "duration": 0.25,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
+      "velocity": 85,
+      "instrument": "synth_strings_2",
+      "channel": 5,
       "offset": 4.25,
-      "effects": []
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
     },
     {
       "type": "note",
       "pitch": "G5",
-      "duration": 0.5,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
+      "duration": 0.25,
+      "velocity": 90,
+      "instrument": "synth_strings_2",
+      "channel": 5,
       "offset": 4.5,
-      "effects": []
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "D#5",
+      "pitch": "C6",
       "duration": 0.25,
       "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
-      "offset": 5.0,
-      "effects": []
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 4.75,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
     },
     {
       "type": "note",
       "pitch": "C5",
       "duration": 0.25,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
-      "offset": 5.25,
-      "effects": []
+      "velocity": 80,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 5.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "A#4",
+      "pitch": "Eb5",
+      "duration": 0.25,
+      "velocity": 85,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 5.25,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "G5",
+      "duration": 0.25,
+      "velocity": 90,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 5.5,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C6",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 5.75,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C5",
+      "duration": 0.25,
+      "velocity": 80,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 6.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "Eb5",
+      "duration": 0.25,
+      "velocity": 85,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 6.25,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "G5",
+      "duration": 0.25,
+      "velocity": 90,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 6.5,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C6",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 6.75,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C5",
+      "duration": 0.25,
+      "velocity": 80,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 7.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "Eb5",
+      "duration": 0.25,
+      "velocity": 85,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 7.25,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "G5",
+      "duration": 0.25,
+      "velocity": 90,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 7.5,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C6",
+      "duration": 0.25,
+      "velocity": 95,
+      "instrument": "synth_strings_2",
+      "channel": 5,
+      "offset": 7.75,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        },
+        {
+          "type": "chorus_level",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C4",
+      "duration": 4.0,
+      "velocity": 80,
+      "instrument": "string_ensemble_1",
+      "channel": 0,
+      "offset": 8.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "Eb4",
+      "duration": 4.0,
+      "velocity": 75,
+      "instrument": "string_ensemble_1",
+      "channel": 1,
+      "offset": 8.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "G4",
+      "duration": 4.0,
+      "velocity": 70,
+      "instrument": "string_ensemble_1",
+      "channel": 2,
+      "offset": 8.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "Bb4",
+      "duration": 4.0,
+      "velocity": 65,
+      "instrument": "string_ensemble_1",
+      "channel": 3,
+      "offset": 8.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C3",
+      "duration": 4.0,
+      "velocity": 40,
+      "instrument": "contrabass",
+      "channel": 4,
+      "offset": 8.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "G3",
+      "duration": 0.5,
+      "velocity": 90,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 8.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "C4",
       "duration": 0.5,
       "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
-      "offset": 5.5,
-      "effects": []
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 8.5,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "pitch": "G4",
+      "duration": 0.5,
+      "velocity": 100,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 9.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
     },
     {
       "type": "note",
       "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
-      "offset": 6.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "D#5",
-      "duration": 0.25,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
-      "offset": 6.25,
-      "effects": []
+      "duration": 0.5,
+      "velocity": 105,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 9.5,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
     },
     {
       "type": "note",
       "pitch": "G5",
       "duration": 0.5,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
-      "offset": 6.5,
-      "effects": []
+      "velocity": 110,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 10.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "D#5",
-      "duration": 0.25,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
-      "offset": 7.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C5",
-      "duration": 0.25,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
-      "offset": 7.25,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "A#4",
+      "pitch": "C6",
       "duration": 0.5,
-      "velocity": 95,
-      "instrument": "lead_1_square",
-      "channel": 2,
-      "offset": 7.5,
-      "effects": []
+      "velocity": 115,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 10.5,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "C4",
-      "duration": 0.25,
-      "velocity": 80,
-      "instrument": "open_hihat",
-      "channel": 9,
-      "offset": 0.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C4",
-      "duration": 0.25,
-      "velocity": 80,
-      "instrument": "open_hihat",
-      "channel": 9,
-      "offset": 0.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C4",
-      "duration": 0.25,
-      "velocity": 80,
-      "instrument": "open_hihat",
-      "channel": 9,
-      "offset": 1.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C4",
-      "duration": 0.25,
-      "velocity": 80,
-      "instrument": "open_hihat",
-      "channel": 9,
-      "offset": 1.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C4",
-      "duration": 0.25,
-      "velocity": 80,
-      "instrument": "open_hihat",
-      "channel": 9,
-      "offset": 2.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C4",
-      "duration": 0.25,
-      "velocity": 80,
-      "instrument": "open_hihat",
-      "channel": 9,
-      "offset": 2.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C4",
-      "duration": 0.25,
-      "velocity": 80,
-      "instrument": "open_hihat",
-      "channel": 9,
-      "offset": 3.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C4",
-      "duration": 0.25,
-      "velocity": 80,
-      "instrument": "open_hihat",
-      "channel": 9,
-      "offset": 3.5,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C2",
+      "pitch": "G6",
       "duration": 0.5,
-      "velocity": 100,
-      "instrument": "bass_drum",
-      "channel": 9,
-      "offset": 0.0,
-      "effects": []
+      "velocity": 120,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 11.0,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
     },
     {
       "type": "note",
-      "pitch": "C2",
+      "pitch": "C7",
       "duration": 0.5,
-      "velocity": 100,
-      "instrument": "bass_drum",
-      "channel": 9,
-      "offset": 2.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C2",
-      "duration": 0.5,
-      "velocity": 100,
-      "instrument": "bass_drum",
-      "channel": 9,
-      "offset": 4.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "C2",
-      "duration": 0.5,
-      "velocity": 100,
-      "instrument": "bass_drum",
-      "channel": 9,
-      "offset": 6.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.25,
-      "velocity": 70,
-      "instrument": "electric_guitar_clean",
-      "channel": 6,
-      "offset": 0.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "Bb4",
-      "duration": 0.25,
-      "velocity": 70,
-      "instrument": "electric_guitar_clean",
-      "channel": 6,
-      "offset": 1.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.25,
-      "velocity": 70,
-      "instrument": "electric_guitar_clean",
-      "channel": 6,
-      "offset": 2.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "Bb4",
-      "duration": 0.25,
-      "velocity": 70,
-      "instrument": "electric_guitar_clean",
-      "channel": 6,
-      "offset": 3.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.25,
-      "velocity": 70,
-      "instrument": "electric_guitar_clean",
-      "channel": 6,
-      "offset": 4.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "Bb4",
-      "duration": 0.25,
-      "velocity": 70,
-      "instrument": "electric_guitar_clean",
-      "channel": 6,
-      "offset": 5.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "G4",
-      "duration": 0.25,
-      "velocity": 70,
-      "instrument": "electric_guitar_clean",
-      "channel": 6,
-      "offset": 6.0,
-      "effects": []
-    },
-    {
-      "type": "note",
-      "pitch": "Bb4",
-      "duration": 0.25,
-      "velocity": 70,
-      "instrument": "electric_guitar_clean",
-      "channel": 6,
-      "offset": 7.0,
-      "effects": []
+      "velocity": 125,
+      "instrument": "trumpet",
+      "channel": 8,
+      "offset": 11.5,
+      "effects": [
+        {
+          "type": "reverb_level",
+          "value": 70
+        }
+      ]
     }
   ],
-  "tempo": 128.0,
+  "tempo": 90.0,
   "time_signature": "4/4"
 }

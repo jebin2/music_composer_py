@@ -124,6 +124,8 @@ const SettingsManager = {
 			const data = await res.json();
 			if (data.api_key) {
 				document.getElementById("apiKey").value = data.api_key.replace(/^"|"$/g, ''); // Remove extra quotes if present
+				instruments = data.instruments;
+				InstrumentManager.initialize();
 			}
 		} catch (err) {
 			console.error("Failed to load settings:", err);
@@ -135,7 +137,7 @@ const SettingsManager = {
 /**
  * Instrument Selection Manager
  */
-const instruments = ['piano', 'guitar', 'violin'];
+let instruments = ['piano', 'guitar', 'violin'];
 
 const InstrumentManager = {
 	updateButtonStyles: function () {
@@ -225,7 +227,7 @@ const MusicGenerator = {
 
 		// Update UI state
 		generateButton.disabled = true;
-		generateButton.textContent = "Generating...";
+		generateButton.textContent = "Imagine...";
 
 		try {
 			const response = await fetch('/api/generate', {
@@ -265,14 +267,20 @@ const AudioPlayer = {
 		if (state.isPlaying) {
 			audio.pause();
 			waveformElement.classList.remove('is-playing');
+			// state.isPlaying will be updated in the 'pause' event listener
 		} else {
-			audio.play().catch(err => {
-				console.error("Error playing audio:", err);
-			});
-			waveformElement.classList.add('is-playing');
+			audio.play()
+				.then(() => {
+					waveformElement.classList.add('is-playing');
+					// state.isPlaying will be updated in the 'play' event listener
+				})
+				.catch(err => {
+					console.error("Error playing audio:", err);
+				});
+			// Don't touch state.isPlaying here — let 'play' event handle it
 		}
-		state.isPlaying = !state.isPlaying;
 	},
+
 
 	updatePlayIcon: function (isPlaying) {
 		playButton.innerHTML = isPlaying ? ICONS.pause : ICONS.play;
@@ -339,12 +347,12 @@ const DownloadManager = {
  */
 function initializeApp() {
 	// Set default text input value
-	textInput.value = "Create a piece of electronic dance music with a strong beat and a melody that features a synthesizer.";
+	textInput.value = `The highly classified document contained extremely sensitive information about the government's secret space exploration program, codenamed "Eclipse," which had been shrouded in mystery for decades. The existence of alien life was confirmed, sparking widespread panic and chaos throughout the world. The news was met with both awe and terror as scientists and world leaders scrambled to understand the implications. Meanwhile, a rogue agent had infiltrated the facility, intent on exploiting the discovery for personal gain. The clock was ticking, and the fate of humanity hung precariously in the balance. The world teetered on the brink of chaos as the truth about Eclipse began to unravel.`;
 
 	// Initialize all components
 	ThemeManager.initialize();
 	SettingsManager.initialize();
-	InstrumentManager.initialize();
+	// InstrumentManager.initialize();
 	MusicGenerator.initialize();
 	AudioPlayer.initialize();
 	DownloadManager.initialize();
