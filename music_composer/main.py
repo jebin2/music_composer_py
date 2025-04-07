@@ -12,6 +12,7 @@ from .instrument_kit import InstrumentKit
 from .controller_effect_kit import ControllerEffectKit
 from .pitch_bend_kit import PitchEffectKit
 import random
+from .create_notes import image_notes
 
 class MusicComposer:
 
@@ -22,6 +23,12 @@ class MusicComposer:
 			file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "system_prompt.txt")
 			with open(file_path, 'r', encoding='utf-8') as file:
 				self.__system_instruction = file.read()
+
+		instrument_json = json.dumps(InstrumentKit().get_midi_map(), indent=4)
+		self.__system_instruction = self.__system_instruction.replace("####INSTRUMENTS####", instrument_json)
+
+		self.meta_data_save_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "music_data.json")
+		self.meta_image_save_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "music_data")
 
 		self.__geminiWrapper = GeminiWrapper(
 			model_name=self.__model_name,
@@ -118,6 +125,7 @@ class MusicComposer:
 			
 			# Map to store tracks by instrument
 			instrument_tracks = {}
+			inst_kit = InstrumentKit()
 			
 			# Process notes for each instrument/track
 			for note_data in music_info["notes"]:
@@ -140,14 +148,13 @@ class MusicComposer:
 					
 					if not is_drum:
 						# Set instrument program
-						program_number = InstrumentKit.get_program_number(instrument_name)
+						program_number = inst_kit.get_program_number(instrument_name)
 						track.append(Message('program_change', program=program_number, channel=channel, time=0))
 				
 				# Get the track
 				track = instrument_tracks[track_key]
 
 				ControllerEffectKit.add_effects(track=track, channel=channel, note_data=note_data)
-				# added_pitch_bend = self.__add_pitch_bends(track=track, channel=channel, note_data=note_data)
 				PitchEffectKit.add_pitch(track=track, channel=channel, ticks=self.__duration, note_data=note_data)
 				
 				# Process note
@@ -346,7 +353,7 @@ class MusicComposer:
 		"""
 		# Add genre context if provided
 		enhanced_prompt = f"{user_prompt} in {genre} style" if genre else user_prompt
-		
+
 		try:
 			enhanced_prompt = user_prompt
 		
@@ -359,9 +366,12 @@ class MusicComposer:
 			
 				# Convert to JSON and create MIDI file
 				music_data = json.loads(music_meta)
+				with open(self.meta_data_save_path, "w") as f:
+					json.dump(music_data, f, indent=2)
+
 
 			self.__create_midi_file(music_data)
-			
+			image_notes(self.meta_data_save_path, self.meta_image_save_path)
 			# Convert to WAV
 			return self.__convert_midi_to_wav()
 		except Exception as e:
