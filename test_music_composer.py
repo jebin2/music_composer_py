@@ -4,28 +4,23 @@ musicComposer = MusicComposer()
 
 music_data = None
 
-jazz_file = musicComposer.generate_music("""Create atleast 30 second music: **Panel 1: Top Left \<cat 1(male)\>:**
-"Did you ever wonder what we'd do if we suddenly grew opposable thumbs overnight?"
+jazz_file = musicComposer.generate_music("""## When Aliens Return Your Socks
 
-**Panel 2: Top Right \<cat 2(female)\>:**
-"Open our own food cans, obviously. No more waiting for humans to wake up."
+### Page 1:
+**Panel 1: Top Left** \<Alex (male)\>: "Did you know that aliens have been stealing our missing socks for decades?"
 
-**Panel 3: Bottom Left \<cat 1(male)\>:**
-"Think bigger! We could text our humans when they're late coming home with dinner."
+**Panel 2: Top Right** \<Maya (female)\>: "Wait, what? Is that why I only have mismatched pairs?"
 
-**Panel 4: Bottom Right \<cat 2(female)\>:**
-"Or unlock doors... imagine the neighborhood chaos with all cats free to roam!"
+**Panel 3: Bottom Left** \<Alex (male)\>: "Exactly! They've been using them as fuel for their spaceships—they convert cotton to cosmic energy."
 
-## Page 2:
-**Panel 1: Top Left \<cat 1(male)\>:**
-"We could finally figure out how the laser pointer works and control it ourselves!"
+**Panel 4: Bottom Right** \<Maya (female)\>: "So THAT'S why the weirdest ones always disappear first. The aliens have fashion sense!"
 
-**Panel 2: Top Right \<cat 2(female)\>:**
-"Wait—we could take selfies while our humans are sleeping and post them online!"
+### Page 2:
+**Panel 1: Top Left** \<Alex (male)\>: "The thing is, they've decided to return them all next Tuesday. ALL of them. Every missing sock since 1952."
 
-**Panel 3: Bottom Left \<cat 1(male)\>:**
-"World domination would be just a thumb-click away..."
+**Panel 2: Top Right** \<Maya (female)\>: "Oh no...that's millions of socks! Where will we put them all?"
 
-**Panel 4: Bottom Right \<cat 2(female)\>:**
-"Let's be honest—we'd still just knock things off shelves, but with better precision."""
+**Panel 3: Bottom Left** \<Alex (male)\>: "The aliens suggest we build sock pyramids. They say it's what they did on their planet."
+
+**Panel 4: Bottom Right** \<Maya (female)\>: "Great. First global warming, now global sock-warming. The apocalypse is getting really weird."""
 , music_data=music_data)
