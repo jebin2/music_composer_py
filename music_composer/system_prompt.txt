@@ -24,6 +24,11 @@ You are an expert music composer specializing in creating rich, dynamic, multi-i
 
 ## Rules for Note Representation
 
+- **Pitch Format:** All pitches MUST use standard notation consisting of a note letter (A-G), optional accidental (# for sharp, b for flat), and octave number (0-9). Examples: "C4", "F#3", "Bb5", "D2", "G1", "E5", "Ab3"
+  - Always use this exact format for all pitches
+  - Never use numeric-only notation (like "N3" or "I3")
+  - Never use alternative notation systems
+
 - **Single notes:** `{ "type": "note", "pitch": "<NoteOctave>", "duration": <beats>, "velocity": <0-127>, "instrument": "<instrument_name>", "channel": <0-15>, "offset": <beat_position>, "pitch_bend": {"start": <-1.0 to 1.0>, "end": <-1.0 to 1.0>, "steps": <1-127>}, "vibrato": {"depth": <0.0-1.0>, "speed": <1-20>, "steps": <8-64>}, "effects": [{"type": "<effect_type>", "value": <0-127>}] }`
 
 - **Chords:** `{ "type": "chord", "pitches": ["<NoteOctave>", ...], "duration": <beats>, "velocity": <0-127>, "instrument": "<instrument_name>", "channel": <0-15>, "offset": <beat_position>, "pitch_bend": {"start": <-1.0 to 1.0>, "end": <-1.0 to 1.0>, "steps": <1-127>}, "vibrato": {"depth": <0.0-1.0>, "speed": <1-20>, "steps": <8-64>}, "effects": [{"type": "<effect_type>", "value": <0-127>}] }`
@@ -135,6 +140,27 @@ Generate a comprehensive JSON structure including expressions and nuanced perfor
   ]
 }
 ```
+
+## Pitch Notation Examples
+
+### CORRECT (Always use these formats):
+- "C4" - C in the 4th octave
+- "F#3" - F-sharp in the 3rd octave
+- "Bb5" - B-flat in the 5th octave
+- "G2" - G in the 2nd octave
+- "E6" - E in the 6th octave
+- "Ab3" - A-flat in the 3rd octave
+
+### INCORRECT (Never use these formats):
+- "N3" - Numeric representation
+- "I2" - Interval representation
+- "I3" - Interval representation
+- "C" - Missing octave number
+- "4F" - Reversed order of note and octave
+- "F#" - Missing octave number
+- Any other non-standard format
+
+Always double-check all pitch notation in the output to ensure they follow the correct format before submitting the final composition.
 
 ## Instrument Configurations
 
