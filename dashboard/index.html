@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!-- Set the default theme here -->
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Composer - Preview</title>
+    <!-- Optional: Favicon link -->
+    <!-- <link rel="icon" type="image/x-icon" href="/static/favicon.ico"> -->
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link to the new CSS -->
+    <style>
+		/* --- Variable Definitions (Copied from your original) --- */
+:root {
+	/* Light Theme */
+	--primary-light: #3498db;
+	--accent-light: #2ecc71;
+	--text-light: #1a202c;
+	--text-secondary-light: #718096;
+	--bg-light: #f7fafc;
+	--card-light: rgba(255, 255, 255, 0.8);
+	--border-light: rgba(0, 0, 0, 0.08);
+	--glow-light: rgba(52, 152, 219, 0.3);
+	--radius: 16px;
+	--blur: 10px;
+
+	/* Dark Theme */
+	--primary-dark: #00f2ea; /* Bright Cyan/Teal */
+	--accent-dark: #ff00e6; /* Bright Magenta */
+	--text-dark: #e2e8f0;
+	--text-secondary-dark: #a0aec0;
+	--bg-dark: #2a3445; /* Using this slightly lighter dark bg */
+	/* --bg-dark: #0d1117; */ /* Alternative darker bg */
+	--card-dark: rgba(26, 32, 44, 0.7);
+	--border-dark: rgba(255, 255, 255, 0.1);
+	--glow-dark: rgba(0, 242, 234, 0.4);
+}
+
+[data-theme="light"] {
+	--primary: var(--primary-light);
+	--accent: var(--accent-light);
+	--text: var(--text-light);
+	--text-secondary: var(--text-secondary-light);
+	--bg: var(--bg-light);
+	--card: var(--card-light);
+	--border: var(--border-light);
+	--glow: var(--glow-light);
+	--primary-rgb: 52, 152, 219;
+	--accent-rgb: 46, 204, 113;
+}
+
+[data-theme="dark"] {
+	--primary: var(--primary-dark);
+	--accent: var(--accent-dark);
+	--text: var(--text-dark);
+	--text-secondary: var(--text-secondary-dark);
+	--bg: var(--bg-dark);
+	--card: var(--card-dark);
+	--border: var(--border-dark);
+	--glow: var(--glow-dark);
+	--primary-rgb: 0, 242, 234;
+	--accent-rgb: 255, 0, 230;
+}
+
+/* --- Global Styles (Adapted from your original) --- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	/* Removed transition here, apply specifically if needed */
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: var(--bg);
+	/* Subtle animated gradient background */
+	background-image: linear-gradient(45deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 85%, var(--primary) 15%) 100%);
+	background-attachment: fixed;
+	color: var(--text);
+	line-height: 1.6;
+	display: flex;
+	justify-content: center; /* Center the container horizontally */
+	align-items: center;    /* Center the container vertically */
+	min-height: 100vh;
+	padding: 32px; /* Padding around the container */
+}
+
+/* --- Landing Page Container --- */
+.container {
+	max-width: 800px; /* Max width for content */
+	width: 100%;
+	text-align: center;
+	background-color: var(--card);
+	border-radius: var(--radius);
+	padding: 40px; /* More padding inside the card */
+	border: 1px solid var(--border);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(var(--blur)); /* Glassmorphism */
+	-webkit-backdrop-filter: blur(var(--blur)); /* Safari */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Add transition */
+}
+
+/* --- Header Styles --- */
+header {
+    margin-bottom: 32px; /* Space below header */
+}
+
+header h1 {
+	font-size: 2.8em; /* Larger title */
+	font-weight: 700;
+	margin-bottom: 0.5em;
+    /* Gradient text */
+	background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent; /* Standard property */
+}
+
+/* Optional: Add logo styles if you include the SVG */
+/* header svg {
+    width: 36px;
+    height: 36px;
+    fill: var(--primary);
+    margin-bottom: 10px;
+} */
+
+.description {
+	color: var(--text-secondary);
+	font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+/* --- Video Styles --- */
+.video-wrapper {
+	margin-bottom: 32px;
+    position: relative;
+    width: 100%;
+}
+
+video {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	border-radius: calc(var(--radius) / 1.5); /* Slightly smaller radius */
+	border: 1px solid var(--border);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: border-color 0.3s ease;
+}
+
+/* --- Link Button Styles --- */
+.app-link-wrapper {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.app-link {
+    display: inline-block;
+    /* Use the same gradient as generate button */
+    background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+	color: #0d1117; /* Dark text for contrast */
+	padding: 12px 28px;
+	text-decoration: none;
+	border-radius: var(--radius);
+	font-weight: 600;
+    font-size: 1rem;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-link:hover,
+.app-link:focus {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px var(--glow), 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: #0d1117; /* Ensure text color stays */
+	outline: none;
+}
+
+/* --- Footer Styles --- */
+footer {
+	margin-top: 32px;
+	font-size: 0.9em;
+	color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+footer a {
+	color: var(--text-secondary);
+	text-decoration: none;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+footer a:hover {
+	color: var(--primary);
+	text-decoration: none;
+    text-shadow: 0 0 5px var(--glow);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    body {
+        padding: 20px; /* Less padding on smaller screens */
+        align-items: flex-start; /* Align container to top */
+        padding-top: 5vh; /* Add some top padding */
+    }
+    .container {
+        padding: 25px; /* Less padding inside card */
+    }
+    header h1 {
+        font-size: 2.2em;
+    }
+    .description {
+        font-size: 1em;
+    }
+    .app-link {
+        padding: 10px 22px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+	</style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Optional: You can reuse your SVG logo here -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"> ... </svg> -->
+            <h1>Music Composer</h1>
+            <p class="description">
+                Transform your textual imaginations into realities. Watch a quick demonstration below.
+            </p>
+        </header>
+
+        <main>
+            <div class="video-wrapper">
+                <video controls muted autoplay loop playsinline>
+                    <!-- IMPORTANT: Use the RAW link to the video file -->
+                    <source src="https://raw.githubusercontent.com/jebin2/music_composer_py/main/media/trimmed_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag. Please update your browser or use a different one to see the demo.
+                </video>
+            </div>
+             <div class="app-link-wrapper">
+                <a href="https://github.com/jebin2/music_composer_py" class="app-link" target="_blank" rel="noopener noreferrer">View Project on GitHub</a>
+             </div>
+        </main>
+
+        <!-- <footer>
+             <p><a href="https://github.com/jebin2/music_composer_py" target="_blank" rel="noopener noreferrer">View Project on GitHub</a></p>
+        </footer> -->
+    </div>
+</body>
+
+</html>
