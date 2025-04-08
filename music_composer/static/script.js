@@ -62,8 +62,12 @@ function formatTime(seconds) {
 
 // Load audio file
 function loadAudio() {
-	audio.src = "/static/output.wav";
+	const cacheBuster = new Date().getTime();
+	audio.src = `/static/output.wav?cb=${cacheBuster}`;
 	audio.load();
+	audio.addEventListener('loadedmetadata', () => {
+		AudioPlayer.updateTimeDisplay();
+	});
 }
 
 /**
