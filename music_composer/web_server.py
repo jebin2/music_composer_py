@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
-from music_composer import MusicComposer  # Assuming main has generate_music(genre)
 import os
 from dotenv import load_dotenv
+import gc
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
@@ -217,24 +217,39 @@ instrumentMap = {
 def index():
     return render_template("index.html")
 
-# Form submission endpoint
 @app.route("/api/generate", methods=["POST"])
 def generate():
-    data = request.get_json()
-    text = data.get("text", "")
-    instruments = data.get("instruments", None)
-    all_inst = None
-    if instruments:
-        all_inst = [inst for k, v in instrumentMap.items() if k in instruments for inst in v]
+    output_file = None
+    composer_instance = None
+    try:
+        data = request.get_json()
+        text = data.get("text", "")
+        instruments = data.get("instruments", []) # Default to empty list
+        all_inst = None
+        if instruments:
+            all_inst = [inst for k in instruments if k in instrumentMap for inst in instrumentMap[k]]
 
-    print(all_inst)
+        print(f"Generating music with instruments: {all_inst}") # Log the actual list being passed
 
-    output_file = MusicComposer().generate_music(user_prompt=text, instruments=all_inst)
+        # Import and instantiate locally
+        from music_composer import MusicComposer
+        composer_instance = MusicComposer()
+        output_file = composer_instance.generate_music(user_prompt=text, instruments=all_inst)
 
-    return jsonify({
-        "message": "Music generated!",
-        "file": output_file
-    })
+        return jsonify({
+            "message": "Music generated!",
+            "file": output_file
+        })
+    except Exception as e:
+         print(f"Error during music generation: {e}")
+         # import traceback; print(traceback.format_exc()) # Uncomment for detailed debug
+         return jsonify({"error": "Failed to generate music"}), 500
+    finally:
+        # Clean up the reference explicitly (good practice, though GC should get it)
+        del composer_instance
+        # Suggest garbage collection
+        gc.collect()
+        print("gc.collect() called after generation request.")
 
 @app.route("/api/settings", methods=["GET"])
 def get_settings():
@@ -286,4 +301,4 @@ def save_settings():
     return jsonify({"message": "API Key saved successfully!"})
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    app.run(debug=False, host='0.0.0.0', port=8000)
