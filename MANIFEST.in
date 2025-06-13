@@ -1,0 +1,5 @@
+include README.md
+recursive-include music_composer/templates *
+recursive-include music_composer/static *
+include music_composer/system_prompt.txt
+include music_composer/GeneralUser-GS.sf2

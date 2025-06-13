@@ -4,8 +4,14 @@ setup(
 	name="music_composer",
 	packages=find_packages(exclude=["tests*"]),
 	package_data={
-        "music_composer": ["system_prompt.txt", "GeneralUser-GS.sf2"]
-    },
+		"music_composer": [
+			"system_prompt.txt",
+			"GeneralUser-GS.sf2",
+			"templates/*.html",
+			"static/*.*"
+		]
+	},
+	include_package_data=True,
 	install_requires=[
 		"music21",
 		"mido",

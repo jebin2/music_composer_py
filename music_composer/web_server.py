@@ -2,8 +2,11 @@ from flask import Flask, render_template, request, jsonify
 import os
 from dotenv import load_dotenv
 import gc
+import importlib.resources
 
-app = Flask(__name__, static_folder='static', template_folder='templates')
+with importlib.resources.path("music_composer", "templates") as tpl_path:
+    with importlib.resources.path("music_composer", "static") as static_path:
+        app = Flask(__name__, template_folder=str(tpl_path), static_folder=str(static_path))
 
 
 instrumentMap = {
@@ -300,5 +303,8 @@ def save_settings():
 
     return jsonify({"message": "API Key saved successfully!"})
 
-if __name__ == "__main__":
+def run_server():
     app.run(debug=False, host='0.0.0.0', port=8000)
+
+if __name__ == "__main__":
+    run_server()
