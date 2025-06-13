@@ -17,9 +17,9 @@ from .create_notes import image_notes
 class MusicComposer:
 
 	def __init__(self, model_name="gemini-2.0-flash", system_instruction=None, piano_type="acoustic_grand", duration=480, soundfont_path=None, instruments=None):
+		self.__set_writable_path()
 		self.__model_name = model_name
 		self.__system_instruction = system_instruction
-		self.__base_path_to_save_data = os.getenv("MUSIC_COMPOSER_BASE_PATH", None)
 		if not self.__system_instruction:
 			file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "system_prompt.txt")
 			with open(file_path, 'r', encoding='utf-8') as file:
@@ -27,9 +27,6 @@ class MusicComposer:
 
 		instrument_json = json.dumps(InstrumentKit().get_midi_map(), indent=4)
 		self.__system_instruction = self.__system_instruction.replace("####INSTRUMENTS####", instrument_json)
-
-		self.meta_data_save_path = f'{self.__base_path_to_save_data}/music_data.json' if self.__base_path_to_save_data else os.path.join(os.path.dirname(os.path.abspath(__file__)), "music_data.json")
-		self.meta_image_save_path = f'{self.__base_path_to_save_data}/music_data' if self.__base_path_to_save_data else os.path.join(os.path.dirname(os.path.abspath(__file__)), "music_data")
 
 		self.__geminiWrapper = GeminiWrapper(
 			model_name=self.__model_name,
@@ -40,11 +37,19 @@ class MusicComposer:
 		else:
 			self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/GeneralUser-GS.sf2'
 			# self.__soundfont_path = f'{os.path.dirname(os.path.abspath(__file__))}/FluidR3_GM.sf2'
-		self.__output_midi = f'{self.__base_path_to_save_data}/output.mid' if self.__base_path_to_save_data else f'{os.path.dirname(os.path.abspath(__file__))}/output.mid'
-		self.__output_wav = os.getenv("OUTPUT_WAV", f'{os.path.dirname(os.path.abspath(__file__))}/static/output.wav')
+
 		self.__piano_type = piano_type
 		self.__duration = duration
 		self.__instruments = instruments or [{"type": "acoustic_grand", "channel": 0}]
+
+	def __set_writable_path(self):
+		self.__base_path_to_save_data = os.getenv("MUSIC_COMPOSER_BASE_PATH", os.path.dirname(os.path.abspath(__file__)))
+
+		self.meta_data_save_path = f'{self.__base_path_to_save_data}/music_data.json'
+		self.meta_image_save_path = f'{self.__base_path_to_save_data}/music_data'
+		self.__output_midi = f'{self.__base_path_to_save_data}/output.mid'
+
+		self.__output_wav = os.getenv("OUTPUT_WAV", f'{os.path.dirname(os.path.abspath(__file__))}/static/output.wav')
 
 	def __get_midi_notes(self, music_str):
 		try:
