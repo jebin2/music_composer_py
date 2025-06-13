@@ -5,8 +5,13 @@ import gc
 import importlib.resources
 
 with importlib.resources.path("music_composer", "templates") as tpl_path:
-    with importlib.resources.path("music_composer", "static") as static_path:
-        app = Flask(__name__, template_folder=str(tpl_path), static_folder=str(static_path))
+    template_folder=str(tpl_path)
+with importlib.resources.path("music_composer", "static") as static_path:
+    static_folder=str(static_path)
+
+static_folder = os.getenv("MUSIC_COMPOSER_BASE_PATH", static_folder)
+
+app = Flask(__name__, template_folder=template_folder, static_folder=static_folder)
 
 
 instrumentMap = {
