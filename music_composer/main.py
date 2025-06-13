@@ -374,7 +374,6 @@ class MusicComposer:
 			
 				# Convert to JSON and create MIDI file
 				music_data = json.loads(music_meta)
-				print(self.meta_data_save_path)
 				with open(self.meta_data_save_path, "w") as f:
 					json.dump(music_data, f, indent=2)
 
