@@ -249,7 +249,7 @@ def generate():
     except Exception as e:
          print(f"Error during music generation: {e}")
          # import traceback; print(traceback.format_exc()) # Uncomment for detailed debug
-         return jsonify({"error": "Failed to generate music"}), 500
+         return jsonify({"error": "Failed to generate music. Invalid API/API Quota exceeded"}), 500
     finally:
         # Clean up the reference explicitly (good practice, though GC should get it)
         del composer_instance
