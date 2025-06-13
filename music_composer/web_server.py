@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 import os
 from dotenv import load_dotenv
 import gc
@@ -8,8 +8,6 @@ with importlib.resources.path("music_composer", "templates") as tpl_path:
     template_folder=str(tpl_path)
 with importlib.resources.path("music_composer", "static") as static_path:
     static_folder=str(static_path)
-
-static_folder = os.getenv("MUSIC_COMPOSER_BASE_PATH", static_folder)
 
 app = Flask(__name__, template_folder=template_folder, static_folder=static_folder)
 
@@ -309,6 +307,16 @@ def save_settings():
     load_dotenv()
 
     return jsonify({"message": "API Key saved successfully!"})
+
+@app.route('/static/<path:filename>')
+def serve_tmp_static(filename):
+    with importlib.resources.path("music_composer", "static") as static_path:
+        static_folder=str(static_path)
+
+    if os.getenv("MUSIC_COMPOSER_BASE_PATH", None):
+        static_folder = f'{os.getenv("MUSIC_COMPOSER_BASE_PATH", None)}'
+
+    return send_from_directory(static_folder, filename)
 
 def run_server():
     app.run(debug=False, host='0.0.0.0', port=os.getenv("SERVER_PORT", 8000))
