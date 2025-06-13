@@ -264,7 +264,7 @@ def get_settings():
         load_dotenv(dotenv_path=".env", override=True)
 
     # Get the value from environment variables
-    gemini_key = os.getenv("GEMINI_API_KEYS", "")
+    gemini_key = "" if os.getenv("IS_DOCKER", "False").lower() == "true" else os.getenv("GEMINI_API_KEYS", "")
     output_path = os.getenv("OUTPUT_WAV", "")
 
     return jsonify({
