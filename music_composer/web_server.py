@@ -239,7 +239,7 @@ def generate():
 
         # Import and instantiate locally
         from music_composer import MusicComposer
-        composer_instance = MusicComposer()
+        composer_instance = MusicComposer(os.getenv("MODEL_NAME", "gemini-2.0-flash"))
         output_file = composer_instance.generate_music(user_prompt=text, instruments=all_inst)
 
         return jsonify({
