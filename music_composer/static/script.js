@@ -24,6 +24,7 @@ const audio = document.getElementById('audioPlayer');
 const timeDisplay = document.querySelector('.time-display');
 const waveformElement = document.querySelector('.waveform');
 const textInput = document.getElementById("textInput");
+var output_path = "/static/output.wav";
 
 /**
  * SVG Icons
@@ -63,7 +64,7 @@ function formatTime(seconds) {
 // Load audio file
 function loadAudio() {
 	const cacheBuster = new Date().getTime();
-	audio.src = `/static/output.wav?cb=${cacheBuster}`;
+	audio.src = `${output_path}?cb=${cacheBuster}`;
 	audio.load();
 	audio.addEventListener('loadedmetadata', () => {
 		AudioPlayer.updateTimeDisplay();
@@ -132,6 +133,10 @@ const SettingsManager = {
 			if (data.instruments) {
 				instruments = data.instruments;
 				InstrumentManager.initialize();
+			}
+			if (data.output_path) {
+				output_path = data.output_path
+				loadAudio()
 			}
 		} catch (err) {
 			console.error("Failed to load settings:", err);
@@ -336,7 +341,7 @@ const AudioPlayer = {
 const DownloadManager = {
 	download: function () {
 		const link = document.createElement('a');
-		link.href = "/static/output.wav";
+		link.href = output_path;
 		link.download = "generated-music.wav";
 		document.body.appendChild(link);
 		link.click();

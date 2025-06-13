@@ -262,10 +262,12 @@ def get_settings():
 
     # Get the value from environment variables
     gemini_key = os.getenv("GEMINI_API_KEYS", "")
+    output_path = os.getenv("OUTPUT_WAV", "")
 
     return jsonify({
         "api_key": gemini_key,
-        "instruments":[k for k, _ in instrumentMap.items()]
+        "instruments":[k for k, _ in instrumentMap.items()],
+        "output_path":output_path
     })
 
 @app.route("/api/settings", methods=["POST"])
