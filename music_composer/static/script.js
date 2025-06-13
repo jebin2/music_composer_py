@@ -128,6 +128,8 @@ const SettingsManager = {
 			const data = await res.json();
 			if (data.api_key) {
 				document.getElementById("apiKey").value = data.api_key.replace(/^"|"$/g, ''); // Remove extra quotes if present
+			}
+			if (data.instruments) {
 				instruments = data.instruments;
 				InstrumentManager.initialize();
 			}
