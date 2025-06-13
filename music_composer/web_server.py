@@ -308,15 +308,17 @@ def save_settings():
 
     return jsonify({"message": "API Key saved successfully!"})
 
-@app.route('/static/<path:filename>')
-def serve_tmp_static(filename):
-    with importlib.resources.path("music_composer", "static") as static_path:
-        static_folder=str(static_path)
 
-    if os.getenv("MUSIC_COMPOSER_BASE_PATH", None):
-        static_folder = f'{os.getenv("MUSIC_COMPOSER_BASE_PATH", None)}'
+if os.getenv("NEW_STATIC_PATH", None):
+    @app.route(f'{os.getenv("NEW_STATIC_PATH", None)}/<path:filename>')
+    def serve_tmp_static(filename):
+        with importlib.resources.path("music_composer", "static") as static_path:
+            static_folder=str(static_path)
 
-    return send_from_directory(static_folder, filename)
+        if os.getenv("MUSIC_COMPOSER_BASE_PATH", None):
+            static_folder = f'{os.getenv("MUSIC_COMPOSER_BASE_PATH", None)}'
+
+        return send_from_directory(static_folder, filename)
 
 def run_server():
     app.run(debug=False, host='0.0.0.0', port=os.getenv("SERVER_PORT", 8000))
